@@ -12,6 +12,9 @@
 		035E872D1AE1D1ED00654B32 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 035E872C1AE1D1ED00654B32 /* Images.xcassets */; };
 		035E87301AE1D1ED00654B32 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 035E872E1AE1D1ED00654B32 /* LaunchScreen.xib */; };
 		035E873C1AE1D1ED00654B32 /* Filipe_AlvarengaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E873B1AE1D1ED00654B32 /* Filipe_AlvarengaTests.swift */; };
+		035E874E1AE1D71700654B32 /* DotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 035E874C1AE1D71700654B32 /* DotView.xib */; };
+		035E87501AE1D76A00654B32 /* Dot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E874F1AE1D76A00654B32 /* Dot.swift */; };
+		035E87521AE1D7E200654B32 /* DotsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E87511AE1D7E200654B32 /* DotsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,9 @@
 		035E87351AE1D1ED00654B32 /* Filipe AlvarengaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Filipe AlvarengaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		035E873A1AE1D1ED00654B32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		035E873B1AE1D1ED00654B32 /* Filipe_AlvarengaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filipe_AlvarengaTests.swift; sourceTree = "<group>"; };
+		035E874D1AE1D71700654B32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/DotView.xib; sourceTree = "<group>"; };
+		035E874F1AE1D76A00654B32 /* Dot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dot.swift; path = View/Dot.swift; sourceTree = "<group>"; };
+		035E87511AE1D7E200654B32 /* DotsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DotsViewController.swift; path = Controller/DotsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,8 @@
 			children = (
 				035E87291AE1D1ED00654B32 /* Main.storyboard */,
 				035E872E1AE1D1ED00654B32 /* LaunchScreen.xib */,
+				035E874C1AE1D71700654B32 /* DotView.xib */,
+				035E874F1AE1D76A00654B32 /* Dot.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
