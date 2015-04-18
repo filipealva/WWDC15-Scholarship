@@ -137,6 +137,7 @@
 		035E874B1AE1D6B200654B32 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				035E87511AE1D7E200654B32 /* DotsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -223,6 +224,7 @@
 			files = (
 				035E872B1AE1D1ED00654B32 /* Main.storyboard in Resources */,
 				035E87301AE1D1ED00654B32 /* LaunchScreen.xib in Resources */,
+				035E874E1AE1D71700654B32 /* DotView.xib in Resources */,
 				035E872D1AE1D1ED00654B32 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,6 +244,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				035E87261AE1D1ED00654B32 /* AppDelegate.swift in Sources */,
+				035E87521AE1D7E200654B32 /* DotsViewController.swift in Sources */,
+				035E87501AE1D76A00654B32 /* Dot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +282,14 @@
 				035E872F1AE1D1ED00654B32 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		035E874C1AE1D71700654B32 /* DotView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				035E874D1AE1D71700654B32 /* Base */,
+			);
+			name = DotView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -371,6 +383,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Filipe Alvarenga/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -381,6 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Filipe Alvarenga/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

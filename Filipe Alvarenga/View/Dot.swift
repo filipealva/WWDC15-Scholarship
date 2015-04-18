@@ -8,14 +8,16 @@
 
 import UIKit
 
-class Dot: UIView {
+/**
+    Dot view class.
+*/
 
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
+@IBDesignable class Dot: UIView {
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        self.layer.cornerRadius = self.bounds.height / 2
     }
-    */
 
 }
