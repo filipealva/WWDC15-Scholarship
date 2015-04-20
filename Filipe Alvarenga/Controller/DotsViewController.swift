@@ -23,8 +23,6 @@ class DotsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        
         dotNode1 = NSBundle.mainBundle().loadNibNamed("DotView", owner: self, options: nil)[0] as! DotView
         dotNode2 = NSBundle.mainBundle().loadNibNamed("DotView", owner: self, options: nil)[0] as! DotView
         dotNode3 = NSBundle.mainBundle().loadNibNamed("DotView", owner: self, options: nil)[0] as! DotView

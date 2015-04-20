@@ -28,7 +28,7 @@
 		037606271AE2DBD900855F6A /* OpenSans-CondLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 031B2D671AE298A800696A29 /* OpenSans-CondLightItalic.ttf */; };
 		037606281AE2DBD900855F6A /* OpenSans-CondLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 031B2D661AE298A200696A29 /* OpenSans-CondLight.ttf */; };
 		037606291AE2DBD900855F6A /* OpenSans-CondBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 031B2D651AE2989B00696A29 /* OpenSans-CondBold.ttf */; };
-		0376062B1AE317CB00855F6A /* ResumeInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0376062A1AE317CB00855F6A /* ResumeInfo.plist */; };
+		03C21F831AE49B570033F89A /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C21F821AE49B570033F89A /* Story.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +67,7 @@
 		037606191AE29C3A00855F6A /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 		0376061A1AE29C3A00855F6A /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		0376061B1AE29DEE00855F6A /* DotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DotView.swift; path = View/DotView.swift; sourceTree = "<group>"; };
-		0376062A1AE317CB00855F6A /* ResumeInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ResumeInfo.plist; sourceTree = "<group>"; };
+		03C21F821AE49B570033F89A /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Story.swift; path = Model/Story.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +113,6 @@
 				035E87491AE1D69E00654B32 /* View */,
 				035E87481AE1D69800654B32 /* Model */,
 				035E87251AE1D1ED00654B32 /* AppDelegate.swift */,
-				0376062A1AE317CB00855F6A /* ResumeInfo.plist */,
 				035E872C1AE1D1ED00654B32 /* Images.xcassets */,
 				035E87231AE1D1ED00654B32 /* Supporting Files */,
 			);
@@ -161,6 +160,7 @@
 		035E87481AE1D69800654B32 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				03C21F821AE49B570033F89A /* Story.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -267,7 +267,6 @@
 				0376061D1AE2DBD900855F6A /* OpenSans-Bold.ttf in Resources */,
 				0376061E1AE2DBD900855F6A /* OpenSans-BoldItalic.ttf in Resources */,
 				0376061F1AE2DBD900855F6A /* OpenSans-ExtraBold.ttf in Resources */,
-				0376062B1AE317CB00855F6A /* ResumeInfo.plist in Resources */,
 				037606201AE2DBD900855F6A /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				037606211AE2DBD900855F6A /* OpenSans-Italic.ttf in Resources */,
 				037606221AE2DBD900855F6A /* OpenSans-Light.ttf in Resources */,
@@ -302,6 +301,7 @@
 				035E87261AE1D1ED00654B32 /* AppDelegate.swift in Sources */,
 				035E87521AE1D7E200654B32 /* DotsViewController.swift in Sources */,
 				0376061C1AE29DEE00855F6A /* DotView.swift in Sources */,
+				03C21F831AE49B570033F89A /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

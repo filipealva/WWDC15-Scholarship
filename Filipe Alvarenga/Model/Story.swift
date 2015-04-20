@@ -7,3 +7,22 @@
 //
 
 import Foundation
+
+/**
+    Story model class. 
+    
+    :param: title The story title.
+    :param: description The story description.
+*/
+
+class Story {
+    
+    var title: String!
+    var description: String!
+    
+    init(title: String, description: String) {
+        self.title = title
+        self.description = description
+    }
+    
+}
