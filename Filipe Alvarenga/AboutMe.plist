@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict/>
+<dict>
+	<key>Stories</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Left the boring job</string>
+			<key>description</key>
+			<string>I left the job that was my dream job in the past. I was looking for new experiences, looking for a job where I could really make the difference.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Join BEPiD</string>
+			<key>description</key>
+			<string>Logo depois de pedir demissão do meu emprego, fiquei sabendo de um programa de ensino para formar desenvolvedores iOS. Aquilo era muito novo para mim, e apesar de conhecer pouco sobre a plataforma resolvi me inscrever. Fui aceito e logo no início percebi que não seria o mesmo ao final do programa.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>First app launched</string>
+			<key>description</key>
+			<string>Wooah! Após seis meses estudando sobre como desenvolver aplicativos de qualidade e aprendendo muito com as pessoas envolvidas no programa eu lancei meu primeiro aplicativo, o qual eu chamei de LimPOA. O LimPOA é um guia que auxilia moradores da cidade de Porto Alegre a descartar corretamente seus resíduos e para isso utiliza dados abertos cedidos pelo Governo.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string></string>
+			<key>description</key>
+			<string></string>
+		</dict>
+	</array>
+</dict>
 </plist>

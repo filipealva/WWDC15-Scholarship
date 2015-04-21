@@ -29,6 +29,7 @@
 		037606281AE2DBD900855F6A /* OpenSans-CondLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 031B2D661AE298A200696A29 /* OpenSans-CondLight.ttf */; };
 		037606291AE2DBD900855F6A /* OpenSans-CondBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 031B2D651AE2989B00696A29 /* OpenSans-CondBold.ttf */; };
 		03C21F831AE49B570033F89A /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C21F821AE49B570033F89A /* Story.swift */; };
+		03C21F851AE49DC80033F89A /* AboutMe.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03C21F841AE49DC80033F89A /* AboutMe.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		0376061A1AE29C3A00855F6A /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		0376061B1AE29DEE00855F6A /* DotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DotView.swift; path = View/DotView.swift; sourceTree = "<group>"; };
 		03C21F821AE49B570033F89A /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Story.swift; path = Model/Story.swift; sourceTree = "<group>"; };
+		03C21F841AE49DC80033F89A /* AboutMe.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AboutMe.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				031B2D661AE298A200696A29 /* OpenSans-CondLight.ttf */,
 				031B2D651AE2989B00696A29 /* OpenSans-CondBold.ttf */,
 				035E87241AE1D1ED00654B32 /* Info.plist */,
+				03C21F841AE49DC80033F89A /* AboutMe.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				035E872B1AE1D1ED00654B32 /* Main.storyboard in Resources */,
 				035E87301AE1D1ED00654B32 /* LaunchScreen.xib in Resources */,
 				035E874E1AE1D71700654B32 /* DotView.xib in Resources */,
+				03C21F851AE49DC80033F89A /* AboutMe.plist in Resources */,
 				035E872D1AE1D1ED00654B32 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
