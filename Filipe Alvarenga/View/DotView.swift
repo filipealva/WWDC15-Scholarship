@@ -23,6 +23,8 @@ class DotView: UIView {
     }
     
     override func drawRect(rect: CGRect) {
+        super.drawRect(rect)
+        
         let shadowPath = UIBezierPath(rect: self.storyContainer.bounds)
         storyContainer.layer.masksToBounds = false
         storyContainer.layer.shadowColor = UIColor.blackColor().CGColor
