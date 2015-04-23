@@ -42,6 +42,7 @@ class DotsViewController: UIViewController {
         let pathToAboutMe = NSBundle.mainBundle().pathForResource("AboutMe", ofType: "plist")!
         let aboutMe = NSDictionary(contentsOfFile: pathToAboutMe) as! [String: AnyObject]
         let stories = aboutMe["Stories"] as! [[String: AnyObject]]
+        
         return map(stories, {Story(dict: $0)})
     }()
     
@@ -51,6 +52,17 @@ class DotsViewController: UIViewController {
         super.viewDidLoad()
         
         addDotsToView()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        showStartViewController()
     }
 
     override func prefersStatusBarHidden() -> Bool {
@@ -66,6 +78,15 @@ class DotsViewController: UIViewController {
         
         baseScrollView.addSubview(line)
         baseScrollView.contentSize = CGSize(width: view.bounds.width, height: view.bounds.height * CGFloat(dotViews.count))
+    }
+    
+    // MARK: - Navigation 
+    
+    func showStartViewController() {
+//        let startViewController = self.storyboard!.instantiateViewControllerWithIdentifier("StartViewController") as! StartViewController
+//        self.presentViewController(startViewController, animated: false, completion: nil)
+
+        self.performSegueWithIdentifier("showStartViewController", sender: self)
     }
 
 }

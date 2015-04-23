@@ -9,30 +9,40 @@
 			<string>Left the boring job</string>
 			<key>description</key>
 			<string>I left the job that was my dream job in the past. I was looking for new experiences, looking for a job where I could really make the difference.</string>
+			<key>date</key>
+			<string>October 2013</string>
 		</dict>
 		<dict>
 			<key>title</key>
 			<string>Join BEPiD</string>
 			<key>description</key>
 			<string>Logo depois de pedir demissão do meu emprego, fiquei sabendo de um programa de ensino para formar desenvolvedores iOS. Aquilo era muito novo para mim, e apesar de conhecer pouco sobre a plataforma resolvi me inscrever. Fui aceito e logo no início percebi que não seria o mesmo ao final do programa.</string>
+			<key>date</key>
+			<string>November 2014</string>
 		</dict>
 		<dict>
 			<key>title</key>
 			<string>First app launched</string>
 			<key>description</key>
 			<string>Wooah! Após seis meses estudando sobre como desenvolver aplicativos de qualidade e aprendendo muito com as pessoas envolvidas no programa eu lancei meu primeiro aplicativo, o qual eu chamei de LimPOA. O LimPOA é um guia que auxilia moradores da cidade de Porto Alegre a descartar corretamente seus resíduos e para isso utiliza dados abertos cedidos pelo Governo.</string>
+			<key>date</key>
+			<string>July 2014</string>
 		</dict>
 		<dict>
 			<key>title</key>
 			<string>First Swift app</string>
 			<key>description</key>
 			<string>in november/2014 I launched my first app written in Swift, and I&apos;ve made it open-source to share with the people the way that I used Swift to write this app.</string>
+			<key>date</key>
+			<string>November 2014</string>
 		</dict>
 		<dict>
 			<key>title</key>
 			<string>First Swift job</string>
 			<key>description</key>
 			<string>Since Swift was annouced at WWDC 14 I was very exciting with the idea of work with it. Thanks to the code that I opened of my first Swift app I get an full-Swift job! It&apos;s being amazing work just with Swift and I&apos;m learning a lot about it.</string>
+			<key>date</key>
+			<string>January 2015</string>
 		</dict>
 	</array>
 </dict>

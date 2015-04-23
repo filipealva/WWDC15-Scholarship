@@ -15,6 +15,7 @@ class DotView: UIView {
     @IBOutlet weak var storyContainer: UIView!
     @IBOutlet weak var storyTitle: UILabel!
     @IBOutlet weak var storyDescription: UILabel!
+    @IBOutlet weak var storyDate: UILabel!
     
     var story: Story! {
         didSet {
@@ -25,13 +26,14 @@ class DotView: UIView {
     override func drawRect(rect: CGRect) {
         super.drawRect(rect)
         
-        let shadowPath = UIBezierPath(rect: self.storyContainer.bounds)
+        let shadowPath = UIBezierPath(rect: storyContainer.bounds)
         storyContainer.layer.masksToBounds = false
         storyContainer.layer.shadowColor = UIColor.blackColor().CGColor
-        storyContainer.layer.shadowOffset = CGSizeMake(1.0, 1.0)
+        storyContainer.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
         storyContainer.layer.shadowOpacity = 0.5
+        storyContainer.layer.shadowRadius = 1.0
         storyContainer.layer.shadowPath = shadowPath.CGPath
-        storyContainer.layer.cornerRadius = 3.0
+        storyContainer.layer.cornerRadius = 2.0
 
         dot.layer.cornerRadius = dot.bounds.height / 2
     }
@@ -40,7 +42,7 @@ class DotView: UIView {
         super.layoutSubviews()
         
         frame = CGRect(x: frame.origin.x, y: frame.origin.y, width: superview!.bounds.width, height: superview!.bounds.height)
-
+        
         storyDescription.layoutIfNeeded()
         storyContainerHeightConstraint.constant = storyDescription.frame.origin.y + storyDescription.frame.size.height + 8.0
     }
@@ -50,6 +52,7 @@ class DotView: UIView {
     func configureStory() {
         self.storyTitle.text = self.story.title
         self.storyDescription.text = self.story.description
+        self.storyDate.text = self.story.date
     }
-
+    
 }

@@ -10,7 +10,6 @@
 		035E87261AE1D1ED00654B32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E87251AE1D1ED00654B32 /* AppDelegate.swift */; };
 		035E872B1AE1D1ED00654B32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 035E87291AE1D1ED00654B32 /* Main.storyboard */; };
 		035E872D1AE1D1ED00654B32 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 035E872C1AE1D1ED00654B32 /* Images.xcassets */; };
-		035E87301AE1D1ED00654B32 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 035E872E1AE1D1ED00654B32 /* LaunchScreen.xib */; };
 		035E873C1AE1D1ED00654B32 /* Filipe_AlvarengaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E873B1AE1D1ED00654B32 /* Filipe_AlvarengaTests.swift */; };
 		035E874E1AE1D71700654B32 /* DotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 035E874C1AE1D71700654B32 /* DotView.xib */; };
 		035E87521AE1D7E200654B32 /* DotsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E87511AE1D7E200654B32 /* DotsViewController.swift */; };
@@ -55,7 +54,6 @@
 		035E87251AE1D1ED00654B32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		035E872A1AE1D1ED00654B32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		035E872C1AE1D1ED00654B32 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		035E872F1AE1D1ED00654B32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		035E87351AE1D1ED00654B32 /* Filipe AlvarengaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Filipe AlvarengaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		035E873A1AE1D1ED00654B32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		035E873B1AE1D1ED00654B32 /* Filipe_AlvarengaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filipe_AlvarengaTests.swift; sourceTree = "<group>"; };
@@ -124,9 +122,9 @@
 		035E87221AE1D1ED00654B32 /* Filipe Alvarenga */ = {
 			isa = PBXGroup;
 			children = (
-				035E874B1AE1D6B200654B32 /* Controller */,
-				035E87491AE1D69E00654B32 /* View */,
 				035E87481AE1D69800654B32 /* Model */,
+				035E87491AE1D69E00654B32 /* View */,
+				035E874B1AE1D6B200654B32 /* Controller */,
 				035E87251AE1D1ED00654B32 /* AppDelegate.swift */,
 				035E872C1AE1D1ED00654B32 /* Images.xcassets */,
 				035E87231AE1D1ED00654B32 /* Supporting Files */,
@@ -175,7 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				035E87291AE1D1ED00654B32 /* Main.storyboard */,
-				035E872E1AE1D1ED00654B32 /* LaunchScreen.xib */,
+				03D99B5F1AE93F7600E4CC77 /* LaunchScreen.xib */,
 				035E874C1AE1D71700654B32 /* DotView.xib */,
 				0376061B1AE29DEE00855F6A /* DotView.swift */,
 			);
@@ -186,8 +184,42 @@
 			isa = PBXGroup;
 			children = (
 				035E87511AE1D7E200654B32 /* DotsViewController.swift */,
+				03D99B621AE969B700E4CC77 /* StartViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		03D99B641AE9710C00E4CC77 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				03D99B661AE9712C00E4CC77 /* FBShimmering-Prefix.pch */,
+				03D99B671AE9712C00E4CC77 /* FBShimmering.h */,
+				03D99B681AE9712C00E4CC77 /* FBShimmeringLayer.h */,
+				03D99B691AE9712C00E4CC77 /* FBShimmeringLayer.m */,
+				03D99B6A1AE9712C00E4CC77 /* FBShimmeringView.h */,
+				03D99B6B1AE9712C00E4CC77 /* FBShimmeringView.m */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		03D99B6E1AE9714700E4CC77 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				037606111AE29C3A00855F6A /* OpenSans-Bold.ttf */,
+				037606121AE29C3A00855F6A /* OpenSans-BoldItalic.ttf */,
+				037606131AE29C3A00855F6A /* OpenSans-ExtraBold.ttf */,
+				037606141AE29C3A00855F6A /* OpenSans-ExtraBoldItalic.ttf */,
+				037606151AE29C3A00855F6A /* OpenSans-Italic.ttf */,
+				037606161AE29C3A00855F6A /* OpenSans-Light.ttf */,
+				037606171AE29C3A00855F6A /* OpenSans-LightItalic.ttf */,
+				037606181AE29C3A00855F6A /* OpenSans-Regular.ttf */,
+				037606191AE29C3A00855F6A /* OpenSans-Semibold.ttf */,
+				0376061A1AE29C3A00855F6A /* OpenSans-SemiboldItalic.ttf */,
+				031B2D671AE298A800696A29 /* OpenSans-CondLightItalic.ttf */,
+				031B2D661AE298A200696A29 /* OpenSans-CondLight.ttf */,
+				031B2D651AE2989B00696A29 /* OpenSans-CondBold.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,9 +316,9 @@
 				037606281AE2DBD900855F6A /* OpenSans-CondLight.ttf in Resources */,
 				037606291AE2DBD900855F6A /* OpenSans-CondBold.ttf in Resources */,
 				035E872B1AE1D1ED00654B32 /* Main.storyboard in Resources */,
-				035E87301AE1D1ED00654B32 /* LaunchScreen.xib in Resources */,
 				035E874E1AE1D71700654B32 /* DotView.xib in Resources */,
 				03C21F851AE49DC80033F89A /* AboutMe.plist in Resources */,
+				03D99B611AE93F7600E4CC77 /* LaunchScreen.xib in Resources */,
 				035E872D1AE1D1ED00654B32 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,20 +374,20 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		035E872E1AE1D1ED00654B32 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				035E872F1AE1D1ED00654B32 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
 		035E874C1AE1D71700654B32 /* DotView.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				035E874D1AE1D71700654B32 /* Base */,
 			);
 			name = DotView.xib;
+			sourceTree = "<group>";
+		};
+		03D99B5F1AE93F7600E4CC77 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03D99B601AE93F7600E4CC77 /* Base */,
+			);
+			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

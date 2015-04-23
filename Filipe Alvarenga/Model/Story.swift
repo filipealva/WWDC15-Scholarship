@@ -19,10 +19,12 @@ class Story {
     
     var title: String!
     var description: String!
+    var date: String!
     
     init(dict: [String: AnyObject]) {
         self.title = dict["title"] as? String ?? "No title"
         self.description = dict["description"] as? String ?? "No description"
+        self.date = dict["date"] as? String ?? "No date"
     }
     
 }
