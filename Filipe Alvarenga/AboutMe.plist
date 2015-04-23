@@ -24,9 +24,15 @@
 		</dict>
 		<dict>
 			<key>title</key>
-			<string></string>
+			<string>First Swift app</string>
 			<key>description</key>
-			<string></string>
+			<string>in november/2014 I launched my first app written in Swift, and I&apos;ve made it open-source to share with the people the way that I used Swift to write this app.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>First Swift job</string>
+			<key>description</key>
+			<string>Since Swift was annouced at WWDC 14 I was very exciting with the idea of work with it. Thanks to the code that I opened of my first Swift app I get an full-Swift job! It&apos;s being amazing work just with Swift and I&apos;m learning a lot about it.</string>
 		</dict>
 	</array>
 </dict>
