@@ -4,11 +4,12 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <customFonts key="customFonts">
-        <mutableArray key="OpenSans-Light.ttf">
-            <string>OpenSans-Light</string>
-        </mutableArray>
         <mutableArray key="OpenSans-Regular.ttf">
             <string>OpenSans</string>
+            <string>OpenSans</string>
+        </mutableArray>
+        <mutableArray key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
         </mutableArray>
     </customFonts>
     <objects>
@@ -18,80 +19,88 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qx9-bo-zwa">
-                    <rect key="frame" x="15" y="262" width="76" height="76"/>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="76" id="74v-6i-90m"/>
-                        <constraint firstAttribute="height" constant="76" id="YTb-JH-q9e"/>
-                    </constraints>
-                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="igA-rP-VzP">
-                    <rect key="frame" x="106" y="150" width="479" height="300"/>
+                    <rect key="frame" x="83" y="150" width="502" height="300"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left the boring job" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZv-cK-8p9">
-                            <rect key="frame" x="15" y="8" width="449" height="30"/>
+                            <rect key="frame" x="8" y="8" width="479" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="s3l-Mg-BsN"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="20"/>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2oz-wt-E8W">
-                            <rect key="frame" x="15" y="46" width="449" height="1"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="8" y="42" width="479" height="1"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="YtW-ll-iYN"/>
                             </constraints>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story description." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ti-Kv-BQh">
-                            <rect key="frame" x="15" y="55" width="449" height="25"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="October 2013" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dne-cL-2xO">
+                            <rect key="frame" x="8" y="47" width="479" height="15"/>
                             <constraints>
-                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="pV7-4E-Vcg"/>
+                                <constraint firstAttribute="height" constant="15" id="KYO-Tq-GNO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story description." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ti-Kv-BQh">
+                            <rect key="frame" x="8" y="66" width="479" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="uYd-U6-mWs"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="7ti-Kv-BQh" firstAttribute="leading" secondItem="igA-rP-VzP" secondAttribute="leading" constant="15" id="EMw-HP-ERV"/>
-                        <constraint firstItem="2oz-wt-E8W" firstAttribute="leading" secondItem="igA-rP-VzP" secondAttribute="leading" constant="15" id="Fgb-5c-AAu"/>
-                        <constraint firstItem="rZv-cK-8p9" firstAttribute="leading" secondItem="igA-rP-VzP" secondAttribute="leading" constant="15" id="H2r-vj-OMW"/>
+                        <constraint firstAttribute="trailing" secondItem="7ti-Kv-BQh" secondAttribute="trailing" constant="15" id="3Gg-f0-dvq"/>
+                        <constraint firstItem="dne-cL-2xO" firstAttribute="leading" secondItem="igA-rP-VzP" secondAttribute="leading" constant="8" id="8qp-KY-vlT"/>
+                        <constraint firstItem="7ti-Kv-BQh" firstAttribute="top" secondItem="dne-cL-2xO" secondAttribute="bottom" constant="8" id="Bwo-Yv-akv"/>
+                        <constraint firstItem="2oz-wt-E8W" firstAttribute="leading" secondItem="igA-rP-VzP" secondAttribute="leading" constant="8" id="Fgb-5c-AAu"/>
+                        <constraint firstItem="rZv-cK-8p9" firstAttribute="leading" secondItem="igA-rP-VzP" secondAttribute="leading" constant="8" id="H2r-vj-OMW"/>
                         <constraint firstAttribute="trailing" secondItem="rZv-cK-8p9" secondAttribute="trailing" constant="15" id="IDc-Ob-Tdk"/>
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="478" id="Jv7-Io-odT"/>
+                        <constraint firstAttribute="trailing" secondItem="dne-cL-2xO" secondAttribute="trailing" constant="15" id="OsO-hV-FIf"/>
+                        <constraint firstItem="7ti-Kv-BQh" firstAttribute="leading" secondItem="igA-rP-VzP" secondAttribute="leading" constant="8" id="Tos-V0-dCw"/>
+                        <constraint firstItem="dne-cL-2xO" firstAttribute="top" secondItem="2oz-wt-E8W" secondAttribute="bottom" constant="4" id="cOD-Ju-BIH"/>
                         <constraint firstAttribute="trailing" secondItem="2oz-wt-E8W" secondAttribute="trailing" constant="15" id="czl-gL-6dC"/>
-                        <constraint firstItem="7ti-Kv-BQh" firstAttribute="top" secondItem="2oz-wt-E8W" secondAttribute="bottom" constant="8" id="dF5-4X-6pD"/>
-                        <constraint firstAttribute="trailing" secondItem="7ti-Kv-BQh" secondAttribute="trailing" constant="15" id="jAZ-EK-HwD"/>
                         <constraint firstAttribute="height" constant="300" id="jHn-T7-Rkn"/>
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="kFw-vo-nv8"/>
-                        <constraint firstItem="2oz-wt-E8W" firstAttribute="top" secondItem="rZv-cK-8p9" secondAttribute="bottom" constant="8" id="mMk-T5-xqs"/>
+                        <constraint firstItem="7ti-Kv-BQh" firstAttribute="top" secondItem="dne-cL-2xO" secondAttribute="bottom" constant="4" id="l2n-Z4-sdp"/>
+                        <constraint firstItem="2oz-wt-E8W" firstAttribute="top" secondItem="rZv-cK-8p9" secondAttribute="bottom" constant="4" id="mMk-T5-xqs"/>
                         <constraint firstItem="rZv-cK-8p9" firstAttribute="top" secondItem="igA-rP-VzP" secondAttribute="top" constant="8" id="yoB-u9-rke"/>
                     </constraints>
                     <variation key="default">
                         <mask key="constraints">
                             <exclude reference="Jv7-Io-odT"/>
                             <exclude reference="kFw-vo-nv8"/>
+                            <exclude reference="Bwo-Yv-akv"/>
                         </mask>
                     </variation>
+                </view>
+                <view tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qx9-bo-zwa">
+                    <rect key="frame" x="17" y="275" width="50" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="74v-6i-90m"/>
+                        <constraint firstAttribute="height" constant="50" id="YTb-JH-q9e"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="centerY" secondItem="Qx9-bo-zwa" secondAttribute="centerY" id="KVU-9i-wxR"/>
                 <constraint firstAttribute="centerY" secondItem="igA-rP-VzP" secondAttribute="centerY" id="NKl-BI-5H3"/>
                 <constraint firstAttribute="trailing" secondItem="igA-rP-VzP" secondAttribute="trailing" constant="15" id="XbJ-ZL-qhE"/>
-                <constraint firstItem="Qx9-bo-zwa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="bL7-sr-LQk"/>
-                <constraint firstItem="igA-rP-VzP" firstAttribute="leading" secondItem="Qx9-bo-zwa" secondAttribute="trailing" constant="15" id="j5v-Qs-2b0"/>
+                <constraint firstItem="Qx9-bo-zwa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="17" id="bL7-sr-LQk"/>
+                <constraint firstItem="igA-rP-VzP" firstAttribute="leading" secondItem="Qx9-bo-zwa" secondAttribute="trailing" constant="16" id="j5v-Qs-2b0"/>
                 <constraint firstAttribute="centerY" secondItem="Qx9-bo-zwa" secondAttribute="centerY" id="poY-2O-ajS"/>
             </constraints>
-            <variation key="default">
-                <mask key="constraints">
-                    <exclude reference="KVU-9i-wxR"/>
-                </mask>
-            </variation>
             <connections>
                 <outlet property="dot" destination="Qx9-bo-zwa" id="oRg-Cl-M8a"/>
                 <outlet property="storyContainer" destination="igA-rP-VzP" id="1z5-M2-0Rb"/>
