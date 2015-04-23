@@ -18,6 +18,7 @@ class DotsViewController: UIViewController {
     lazy var line: UIView = { [unowned self] in
         let firstDotView = self.dotViews.first!
         let firstDot = firstDotView.dot
+        firstDot.layoutIfNeeded()
         let line = UIView(frame: CGRect(x: firstDot.center.x, y: firstDot.center.y, width: 3.0, height: 0.0))
         line.backgroundColor = UIColor.blackColor()
         line.layer.cornerRadius = 2.0
