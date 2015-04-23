@@ -30,6 +30,10 @@
 		037606291AE2DBD900855F6A /* OpenSans-CondBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 031B2D651AE2989B00696A29 /* OpenSans-CondBold.ttf */; };
 		03C21F831AE49B570033F89A /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C21F821AE49B570033F89A /* Story.swift */; };
 		03C21F851AE49DC80033F89A /* AboutMe.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03C21F841AE49DC80033F89A /* AboutMe.plist */; };
+		03D99B611AE93F7600E4CC77 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D99B5F1AE93F7600E4CC77 /* LaunchScreen.xib */; };
+		03D99B631AE969B700E4CC77 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D99B621AE969B700E4CC77 /* StartViewController.swift */; };
+		03D99B6C1AE9712C00E4CC77 /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D99B691AE9712C00E4CC77 /* FBShimmeringLayer.m */; };
+		03D99B6D1AE9712C00E4CC77 /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D99B6B1AE9712C00E4CC77 /* FBShimmeringView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +74,15 @@
 		0376061B1AE29DEE00855F6A /* DotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DotView.swift; path = View/DotView.swift; sourceTree = "<group>"; };
 		03C21F821AE49B570033F89A /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Story.swift; path = Model/Story.swift; sourceTree = "<group>"; };
 		03C21F841AE49DC80033F89A /* AboutMe.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AboutMe.plist; sourceTree = "<group>"; };
+		03D99B601AE93F7600E4CC77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		03D99B621AE969B700E4CC77 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartViewController.swift; path = Controller/StartViewController.swift; sourceTree = "<group>"; };
+		03D99B651AE9712C00E4CC77 /* Filipe Alvarenga-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Filipe Alvarenga-Bridging-Header.h"; sourceTree = "<group>"; };
+		03D99B661AE9712C00E4CC77 /* FBShimmering-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FBShimmering-Prefix.pch"; sourceTree = "<group>"; };
+		03D99B671AE9712C00E4CC77 /* FBShimmering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmering.h; sourceTree = "<group>"; };
+		03D99B681AE9712C00E4CC77 /* FBShimmeringLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringLayer.h; sourceTree = "<group>"; };
+		03D99B691AE9712C00E4CC77 /* FBShimmeringLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringLayer.m; sourceTree = "<group>"; };
+		03D99B6A1AE9712C00E4CC77 /* FBShimmeringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringView.h; sourceTree = "<group>"; };
+		03D99B6B1AE9712C00E4CC77 /* FBShimmeringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,19 +137,9 @@
 		035E87231AE1D1ED00654B32 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				037606111AE29C3A00855F6A /* OpenSans-Bold.ttf */,
-				037606121AE29C3A00855F6A /* OpenSans-BoldItalic.ttf */,
-				037606131AE29C3A00855F6A /* OpenSans-ExtraBold.ttf */,
-				037606141AE29C3A00855F6A /* OpenSans-ExtraBoldItalic.ttf */,
-				037606151AE29C3A00855F6A /* OpenSans-Italic.ttf */,
-				037606161AE29C3A00855F6A /* OpenSans-Light.ttf */,
-				037606171AE29C3A00855F6A /* OpenSans-LightItalic.ttf */,
-				037606181AE29C3A00855F6A /* OpenSans-Regular.ttf */,
-				037606191AE29C3A00855F6A /* OpenSans-Semibold.ttf */,
-				0376061A1AE29C3A00855F6A /* OpenSans-SemiboldItalic.ttf */,
-				031B2D671AE298A800696A29 /* OpenSans-CondLightItalic.ttf */,
-				031B2D661AE298A200696A29 /* OpenSans-CondLight.ttf */,
-				031B2D651AE2989B00696A29 /* OpenSans-CondBold.ttf */,
+				03D99B641AE9710C00E4CC77 /* Libs */,
+				03D99B6E1AE9714700E4CC77 /* Fonts */,
+				03D99B651AE9712C00E4CC77 /* Filipe Alvarenga-Bridging-Header.h */,
 				035E87241AE1D1ED00654B32 /* Info.plist */,
 				03C21F841AE49DC80033F89A /* AboutMe.plist */,
 			);
@@ -302,7 +305,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03D99B6C1AE9712C00E4CC77 /* FBShimmeringLayer.m in Sources */,
+				03D99B631AE969B700E4CC77 /* StartViewController.swift in Sources */,
 				035E87261AE1D1ED00654B32 /* AppDelegate.swift in Sources */,
+				03D99B6D1AE9712C00E4CC77 /* FBShimmeringView.m in Sources */,
 				035E87521AE1D7E200654B32 /* DotsViewController.swift in Sources */,
 				0376061C1AE29DEE00855F6A /* DotView.swift in Sources */,
 				03C21F831AE49B570033F89A /* Story.swift in Sources */,
@@ -442,10 +448,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Filipe Alvarenga/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Filipe Alvarenga/Filipe Alvarenga-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -453,10 +462,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Filipe Alvarenga/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Filipe Alvarenga/Filipe Alvarenga-Bridging-Header.h";
 			};
 			name = Release;
 		};
