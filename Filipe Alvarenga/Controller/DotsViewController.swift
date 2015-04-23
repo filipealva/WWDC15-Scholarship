@@ -10,10 +10,12 @@ import UIKit
 
 class DotsViewController: UIViewController {
 
+    // MARK: - Properties
+
     @IBOutlet weak var baseScrollView: UIScrollView!
     @IBOutlet weak var bottomBar: UIView!
     
-    lazy var line: UIView = {
+    lazy var line: UIView = { [unowned self] in
         let firstDotView = self.dotViews.first!
         let firstDot = firstDotView.dot
         let line = UIView(frame: CGRect(x: firstDot.center.x, y: firstDot.center.y, width: 3.0, height: 0.0))
@@ -24,7 +26,7 @@ class DotsViewController: UIViewController {
     }()
     
     lazy var dotViews: [DotView] = {
-        map(enumerate(self.stories)) { (index, story) in
+        map(enumerate(self.stories)) { [unowned self] (index, story) in
             let dotView = NSBundle.mainBundle().loadNibNamed("DotView", owner: self, options: nil)[0] as! DotView
             let dotViewFrame = CGRect(x: 0.0, y: self.view.bounds.height * CGFloat(index), width: dotView.bounds.width, height: dotView.bounds.height)
             dotView.frame = dotViewFrame
@@ -68,6 +70,8 @@ class DotsViewController: UIViewController {
 
 extension DotsViewController: UIScrollViewDelegate {
 
+    // MARK: - UIScrollViewDelegate
+
     func scrollViewDidScroll(scrollView: UIScrollView) {
         let yOffset = scrollView.contentOffset.y
         let yOffsetMin: CGFloat = 0.0
@@ -77,6 +81,8 @@ extension DotsViewController: UIScrollViewDelegate {
             updateLineFrameBasedOnOffset(yOffset)
         }
     }
+    
+    // MARK: - Scroll Effects Helpers
     
     func updateLineFrameBasedOnOffset(yOffset: CGFloat) {
         var newFrame = line.frame
