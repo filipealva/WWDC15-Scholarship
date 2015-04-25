@@ -40,18 +40,18 @@
                                 </connections>
                             </scrollView>
                             <view alpha="0.95999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Cl-Fi-irk">
-                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="547" width="600" height="53"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QbK-2c-2ly">
-                                        <rect key="frame" x="480" y="0.0" width="120" height="44"/>
+                                        <rect key="frame" x="512" y="0.0" width="80" height="53"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="gxw-6f-vK3"/>
-                                            <constraint firstAttribute="height" constant="44" id="vwW-C1-gRJ"/>
+                                            <constraint firstAttribute="height" constant="53" id="A3D-rZ-atY"/>
+                                            <constraint firstAttribute="width" constant="80" id="MmD-Pg-UId"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="15"/>
-                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="1"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
-                                        <state key="normal" title="About me" image="Profile-Line">
+                                        <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="13"/>
+                                        <inset key="titleEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="-30"/>
+                                        <inset key="imageEdgeInsets" minX="26" minY="-15" maxX="10" maxY="0.0"/>
+                                        <state key="normal" title="About me" image="aboutme">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </state>
@@ -62,10 +62,10 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="QbK-2c-2ly" secondAttribute="trailing" id="P0c-wQ-iu6"/>
-                                    <constraint firstItem="QbK-2c-2ly" firstAttribute="top" secondItem="3Cl-Fi-irk" secondAttribute="top" id="WyI-Ru-G3i"/>
-                                    <constraint firstAttribute="height" constant="44" id="lPp-gc-WAb"/>
-                                    <constraint firstAttribute="bottom" secondItem="QbK-2c-2ly" secondAttribute="bottom" id="oGY-R5-Leb"/>
+                                    <constraint firstItem="QbK-2c-2ly" firstAttribute="top" secondItem="3Cl-Fi-irk" secondAttribute="top" id="UMr-sN-ZJM"/>
+                                    <constraint firstAttribute="height" constant="53" id="lPp-gc-WAb"/>
+                                    <constraint firstAttribute="bottom" secondItem="QbK-2c-2ly" secondAttribute="bottom" id="pnO-HJ-Tye"/>
+                                    <constraint firstAttribute="trailing" secondItem="QbK-2c-2ly" secondAttribute="trailing" constant="8" id="vo4-L8-9X1"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -324,7 +324,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Profile-Line" width="23" height="23"/>
+        <image name="aboutme" width="28" height="28"/>
         <image name="me" width="225" height="225"/>
     </resources>
 </document>

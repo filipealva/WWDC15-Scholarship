@@ -31,7 +31,7 @@ class Story {
         } else {
             let dateFormatter = NSDateFormatter()
             dateFormatter.dateFormat = "MMMM yyyy"
-            self.date = dateFormatter.stringFromDate(NSDate())
+            self.date = dateFormatter.stringFromDate(NSDate()).capitalizedString
         }
     }
     
