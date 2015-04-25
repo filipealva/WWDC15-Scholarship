@@ -26,9 +26,9 @@ class StartViewController: UIViewController {
         shimmeringView.shimmering = true
         
         shimmeringView.shimmeringPauseDuration = 0.4
-        shimmeringView.shimmeringAnimationOpacity = 0.5
+        shimmeringView.shimmeringAnimationOpacity = 0.2
         shimmeringView.shimmeringOpacity = 1.0
-        shimmeringView.shimmeringSpeed = 230
+        shimmeringView.shimmeringSpeed = 150
         shimmeringView.shimmeringHighlightLength = 1.0
         shimmeringView.shimmeringDirection = FBShimmerDirection.Right
         

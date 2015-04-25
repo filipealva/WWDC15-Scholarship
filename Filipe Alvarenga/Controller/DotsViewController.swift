@@ -30,7 +30,7 @@ class DotsViewController: UIViewController {
     lazy var dotViews: [DotView] = {
         map(enumerate(self.stories)) { [unowned self] (index, story) in
             let dotView = NSBundle.mainBundle().loadNibNamed("DotView", owner: self, options: nil)[0] as! DotView
-            let dotViewFrame = CGRect(x: 0.0, y: self.view.bounds.height * CGFloat(index), width: dotView.bounds.width, height: dotView.bounds.height)
+            let dotViewFrame = CGRect(x: 0.0, y: self.view.bounds.height * CGFloat(index + 1), width: dotView.bounds.width, height: dotView.bounds.height)
             dotView.frame = dotViewFrame
             dotView.story = story
             
@@ -46,11 +46,32 @@ class DotsViewController: UIViewController {
         return map(stories, {Story(dict: $0)})
     }()
     
+    var currentPage: Int = 0 {
+        willSet(newValue) {
+            if newValue == 0 {
+                UIView.animateWithDuration(0.5, animations: { () -> Void in
+                    self.bottomBar.alpha = 0
+                    self.greetingsView.shimmeringView.alpha = 1
+                })
+            } else {
+                UIView.animateWithDuration(0.5, animations: { () -> Void in
+                    self.bottomBar.alpha = 0.96
+                    self.greetingsView.shimmeringView.alpha = 0
+                })
+            }
+        }
+    }
+    
     // MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let tapToScrollDown = UITapGestureRecognizer(target: self, action: "scrollToFirstDot")
+        greetingsView.shimmeringView.addGestureRecognizer(tapToScrollDown)
+        
+        bottomBar.alpha = 0
+
         addDotsToView()
     }
     
@@ -72,20 +93,19 @@ class DotsViewController: UIViewController {
     // MARK: - Dots Configuration
     
     func addDotsToView() {
+        baseScrollView.addSubview(greetingsView)
+    
         for dotView in dotViews {
             baseScrollView.addSubview(dotView)
         }
         
         baseScrollView.addSubview(line)
-        baseScrollView.contentSize = CGSize(width: view.bounds.width, height: view.bounds.height * CGFloat(dotViews.count))
+        baseScrollView.contentSize = CGSize(width: view.bounds.width, height: view.bounds.height * CGFloat(dotViews.count + 1))
     }
     
     // MARK: - Navigation 
     
     func showStartViewController() {
-//        let startViewController = self.storyboard!.instantiateViewControllerWithIdentifier("StartViewController") as! StartViewController
-//        self.presentViewController(startViewController, animated: false, completion: nil)
-
         self.performSegueWithIdentifier("showStartViewController", sender: self)
     }
 
@@ -97,12 +117,16 @@ extension DotsViewController: UIScrollViewDelegate {
 
     func scrollViewDidScroll(scrollView: UIScrollView) {
         let yOffset = scrollView.contentOffset.y
-        let yOffsetMin: CGFloat = 0.0
-        let yOffsetMax = self.view.bounds.height * CGFloat(dotViews.count - 1)
+        let yOffsetMin: CGFloat = view.bounds.height
+        let yOffsetMax = self.view.bounds.height * CGFloat(dotViews.count)
         
         if yOffset > yOffsetMin && yOffset < yOffsetMax {
-            updateLineFrameBasedOnOffset(yOffset)
+            let yOffsetWithoutGreetingsView = yOffset - greetingsView.frame.size.height
+            updateLineFrameBasedOnOffset(yOffsetWithoutGreetingsView)
         }
+        
+        let fractionalPage = yOffset / view.bounds.height
+        currentPage = lroundf(Float(fractionalPage))
     }
     
     // MARK: - Scroll Effects Helpers
@@ -114,6 +138,10 @@ extension DotsViewController: UIScrollViewDelegate {
         UIView.animateWithDuration(0.5, animations: { [unowned self] () -> Void in
             self.line.frame = newFrame
         })
+    }
+    
+    func scrollToFirstDot() {
+        baseScrollView.setContentOffset(CGPoint(x: 0.0, y: view.bounds.height), animated: true)
     }
     
 }

@@ -33,6 +33,8 @@
 		03D99B631AE969B700E4CC77 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D99B621AE969B700E4CC77 /* StartViewController.swift */; };
 		03D99B6C1AE9712C00E4CC77 /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D99B691AE9712C00E4CC77 /* FBShimmeringLayer.m */; };
 		03D99B6D1AE9712C00E4CC77 /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D99B6B1AE9712C00E4CC77 /* FBShimmeringView.m */; };
+		03D99B741AE98B0100E4CC77 /* GreetingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D99B721AE98B0100E4CC77 /* GreetingsView.xib */; };
+		03D99B761AE9929100E4CC77 /* GreetingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D99B751AE9929100E4CC77 /* GreetingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		03D99B691AE9712C00E4CC77 /* FBShimmeringLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringLayer.m; sourceTree = "<group>"; };
 		03D99B6A1AE9712C00E4CC77 /* FBShimmeringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringView.h; sourceTree = "<group>"; };
 		03D99B6B1AE9712C00E4CC77 /* FBShimmeringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringView.m; sourceTree = "<group>"; };
+		03D99B731AE98B0100E4CC77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/GreetingsView.xib; sourceTree = "<group>"; };
+		03D99B751AE9929100E4CC77 /* GreetingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GreetingsView.swift; path = View/GreetingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,8 +178,10 @@
 			children = (
 				035E87291AE1D1ED00654B32 /* Main.storyboard */,
 				03D99B5F1AE93F7600E4CC77 /* LaunchScreen.xib */,
+				03D99B721AE98B0100E4CC77 /* GreetingsView.xib */,
 				035E874C1AE1D71700654B32 /* DotView.xib */,
 				0376061B1AE29DEE00855F6A /* DotView.swift */,
+				03D99B751AE9929100E4CC77 /* GreetingsView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -309,6 +315,7 @@
 				037606211AE2DBD900855F6A /* OpenSans-Italic.ttf in Resources */,
 				037606221AE2DBD900855F6A /* OpenSans-Light.ttf in Resources */,
 				037606231AE2DBD900855F6A /* OpenSans-LightItalic.ttf in Resources */,
+				03D99B741AE98B0100E4CC77 /* GreetingsView.xib in Resources */,
 				037606241AE2DBD900855F6A /* OpenSans-Regular.ttf in Resources */,
 				037606251AE2DBD900855F6A /* OpenSans-Semibold.ttf in Resources */,
 				037606261AE2DBD900855F6A /* OpenSans-SemiboldItalic.ttf in Resources */,
@@ -338,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03D99B6C1AE9712C00E4CC77 /* FBShimmeringLayer.m in Sources */,
+				03D99B761AE9929100E4CC77 /* GreetingsView.swift in Sources */,
 				03D99B631AE969B700E4CC77 /* StartViewController.swift in Sources */,
 				035E87261AE1D1ED00654B32 /* AppDelegate.swift in Sources */,
 				03D99B6D1AE9712C00E4CC77 /* FBShimmeringView.m in Sources */,
@@ -388,6 +396,14 @@
 				03D99B601AE93F7600E4CC77 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		03D99B721AE98B0100E4CC77 /* GreetingsView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03D99B731AE98B0100E4CC77 /* Base */,
+			);
+			name = GreetingsView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

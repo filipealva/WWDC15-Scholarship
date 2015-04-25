@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GreetingsView" customModule="Filipe_Alvarenga" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9qf-cw-FGm">
+                    <rect key="frame" x="0.0" y="242" width="600" height="115"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me" translatesAutoresizingMaskIntoConstraints="NO" id="y4T-cl-PIV">
+                            <rect key="frame" x="15" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="8YY-YS-gbI"/>
+                                <constraint firstAttribute="height" constant="50" id="O7Y-2Q-WJF"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WJb-Lx-wSR">
+                            <rect key="frame" x="66" y="0.0" width="519" height="115"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChatBubble" translatesAutoresizingMaskIntoConstraints="NO" id="29G-V9-zBh">
+                                    <rect key="frame" x="0.0" y="0.0" width="519" height="115"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, I'm Filipe Alvarenga and I trust that the dots will somehow connect in my future. Will be a pleasure to meet you!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JYM-m3-4XW">
+                                    <rect key="frame" x="22" y="8" width="484" height="41"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="QKU-bg-Fhv"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="JYM-m3-4XW" firstAttribute="leading" secondItem="WJb-Lx-wSR" secondAttribute="leading" constant="22" id="5w8-Rb-Qh2"/>
+                                <constraint firstAttribute="bottom" secondItem="29G-V9-zBh" secondAttribute="bottom" id="E1K-ud-Pd2"/>
+                                <constraint firstAttribute="trailing" secondItem="JYM-m3-4XW" secondAttribute="trailing" constant="13" id="JHK-rh-Q3B"/>
+                                <constraint firstAttribute="trailing" secondItem="29G-V9-zBh" secondAttribute="trailing" id="Jfs-Bk-8vN"/>
+                                <constraint firstItem="JYM-m3-4XW" firstAttribute="top" secondItem="WJb-Lx-wSR" secondAttribute="top" constant="8" id="JxM-LL-aeK"/>
+                                <constraint firstItem="29G-V9-zBh" firstAttribute="leading" secondItem="WJb-Lx-wSR" secondAttribute="leading" id="TA2-4l-K2A"/>
+                                <constraint firstItem="29G-V9-zBh" firstAttribute="top" secondItem="WJb-Lx-wSR" secondAttribute="top" id="joh-wx-FLE"/>
+                                <constraint firstAttribute="height" constant="115" id="zKN-H5-QxN"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="y4T-cl-PIV" firstAttribute="top" secondItem="9qf-cw-FGm" secondAttribute="top" id="1G8-xf-ieA"/>
+                        <constraint firstAttribute="height" constant="115" id="CR4-QQ-SJw"/>
+                        <constraint firstItem="y4T-cl-PIV" firstAttribute="leading" secondItem="9qf-cw-FGm" secondAttribute="leading" constant="15" id="F7S-gs-cUe"/>
+                        <constraint firstItem="WJb-Lx-wSR" firstAttribute="leading" secondItem="y4T-cl-PIV" secondAttribute="trailing" constant="1" id="WSA-2B-KRo"/>
+                        <constraint firstItem="WJb-Lx-wSR" firstAttribute="top" secondItem="9qf-cw-FGm" secondAttribute="top" id="YcW-7B-83u"/>
+                        <constraint firstAttribute="trailing" secondItem="WJb-Lx-wSR" secondAttribute="trailing" constant="15" id="agy-vg-hD1"/>
+                        <constraint firstAttribute="bottom" secondItem="WJb-Lx-wSR" secondAttribute="bottom" id="ikZ-GU-Upd"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CYg-cz-GvU" customClass="FBShimmeringView">
+                    <rect key="frame" x="278" y="506" width="44" height="44"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Down4-100" translatesAutoresizingMaskIntoConstraints="NO" id="PQ4-5g-WIg">
+                            <rect key="frame" x="12" y="12" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="Aml-lF-925"/>
+                                <constraint firstAttribute="height" constant="20" id="MJg-hn-G9G"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="EC1-kA-UVu"/>
+                        <constraint firstAttribute="height" constant="44" id="TN1-3c-qCP"/>
+                        <constraint firstAttribute="trailing" secondItem="PQ4-5g-WIg" secondAttribute="trailing" constant="12" id="cF3-gR-Mee"/>
+                        <constraint firstAttribute="bottom" secondItem="PQ4-5g-WIg" secondAttribute="bottom" constant="12" id="jSl-6e-PlC"/>
+                        <constraint firstItem="PQ4-5g-WIg" firstAttribute="top" secondItem="CYg-cz-GvU" secondAttribute="top" constant="12" id="oI6-Vs-5aA"/>
+                        <constraint firstItem="PQ4-5g-WIg" firstAttribute="leading" secondItem="CYg-cz-GvU" secondAttribute="leading" constant="12" id="y0T-aL-421"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="9qf-cw-FGm" secondAttribute="trailing" id="UPq-tN-Cgf"/>
+                <constraint firstAttribute="bottom" secondItem="CYg-cz-GvU" secondAttribute="bottom" constant="50" id="iCH-JI-BqP"/>
+                <constraint firstItem="9qf-cw-FGm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uCl-tp-5vB"/>
+                <constraint firstAttribute="centerX" secondItem="CYg-cz-GvU" secondAttribute="centerX" id="voS-X5-f7y"/>
+                <constraint firstAttribute="centerY" secondItem="9qf-cw-FGm" secondAttribute="centerY" id="wPi-ia-n7Q"/>
+            </constraints>
+            <connections>
+                <outlet property="greetingsContentHeightConstraint" destination="CR4-QQ-SJw" id="MqW-DX-InA"/>
+                <outlet property="greetingsMessage" destination="JYM-m3-4XW" id="Hok-yU-W8f"/>
+                <outlet property="greetingsMessageContainer" destination="WJb-Lx-wSR" id="URq-RB-1K1"/>
+                <outlet property="greetingsMessageContainerHeightConstraint" destination="zKN-H5-QxN" id="dRE-H9-Cz5"/>
+                <outlet property="scrollDownArrow" destination="PQ4-5g-WIg" id="YQA-Hl-XtR"/>
+                <outlet property="shimmeringView" destination="CYg-cz-GvU" id="kfR-zk-mLS"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="ChatBubble" width="41" height="28"/>
+        <image name="Down4-100" width="33" height="33"/>
+        <image name="me" width="225" height="225"/>
+    </resources>
+</document>
