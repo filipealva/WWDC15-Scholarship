@@ -18,6 +18,14 @@ class AboutMeTableViewController: UITableViewController {
         return map(projects, {Project(dict: $0)})
     }()
     
+    lazy var educationItems: [EducationItem] = {
+        let pathToAboutMe = NSBundle.mainBundle().pathForResource("AboutMe", ofType: "plist")!
+        let aboutMe = NSDictionary(contentsOfFile: pathToAboutMe) as! [String: AnyObject]
+        let educationItems = aboutMe["educationItems"] as! [[String: AnyObject]]
+        
+        return map(educationItems, {EducationItem(dict: $0)})
+    }()
+    
     let projectCellIdentifier = "projectCell"
 
     override func viewDidLoad() {
