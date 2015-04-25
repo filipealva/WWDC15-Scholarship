@@ -19,7 +19,7 @@ class DotView: UIView {
     
     var story: Story! {
         didSet {
-            self.configureStory()
+            configureStory()
         }
     }
     

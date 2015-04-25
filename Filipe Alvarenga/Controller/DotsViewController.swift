@@ -48,7 +48,7 @@ class DotsViewController: UIViewController {
     lazy var stories: [Story] = {
         let pathToAboutMe = NSBundle.mainBundle().pathForResource("AboutMe", ofType: "plist")!
         let aboutMe = NSDictionary(contentsOfFile: pathToAboutMe) as! [String: AnyObject]
-        let stories = aboutMe["Stories"] as! [[String: AnyObject]]
+        let stories = aboutMe["stories"] as! [[String: AnyObject]]
         
         return map(stories, {Story(dict: $0)})
     }()

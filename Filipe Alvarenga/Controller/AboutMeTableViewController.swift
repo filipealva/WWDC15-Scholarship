@@ -9,6 +9,16 @@
 import UIKit
 
 class AboutMeTableViewController: UITableViewController {
+    
+    lazy var projects: [Project] = {
+        let pathToAboutMe = NSBundle.mainBundle().pathForResource("AboutMe", ofType: "plist")!
+        let aboutMe = NSDictionary(contentsOfFile: pathToAboutMe) as! [String: AnyObject]
+        let projects = aboutMe["projects"] as! [[String: AnyObject]]
+        
+        return map(projects, {Project(dict: $0)})
+    }()
+    
+    let projectCellIdentifier = "projectCell"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,23 +33,32 @@ class AboutMeTableViewController: UITableViewController {
         tableView.estimatedRowHeight = 100.0
     
         let projectNib = UINib(nibName: "ProjectCell", bundle: NSBundle.mainBundle())
-        tableView.registerNib(projectNib, forCellReuseIdentifier: "projectCell")
+        tableView.registerNib(projectNib, forCellReuseIdentifier: projectCellIdentifier)
     }
-
+    
+    // MARK: - Actions
+    
+    @IBAction func closeAboutMe(sender: UIBarButtonItem) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
 }
 
 extension AboutMeTableViewController: UITableViewDataSource {
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 3
+        return 1
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return projects.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let projectCell = tableView.dequeueReusableCellWithIdentifier(projectCellIdentifier, forIndexPath: indexPath) as! ProjectTableViewCell
+        projectCell.project = projects[indexPath.row]
+        
+        return projectCell
     }
     
 }

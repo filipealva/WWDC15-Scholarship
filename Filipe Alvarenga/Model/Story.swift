@@ -24,7 +24,6 @@ class Story {
     init(dict: [String: AnyObject]) {
         self.title = dict["title"] as? String ?? "No title"
         self.description = dict["description"] as? String ?? "No description"
-        self.date = dict["date"] as? String ?? "No date"
         
         if let date = dict["date"] as? String {
             self.date = date
