@@ -15,6 +15,7 @@
 		034279921AEC300500F7EF21 /* EducationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034279911AEC300500F7EF21 /* EducationItem.swift */; };
 		034279951AEC311900F7EF21 /* EducationItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 034279931AEC311900F7EF21 /* EducationItemCell.xib */; };
 		034279971AEC3C9900F7EF21 /* EducationItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034279961AEC3C9900F7EF21 /* EducationItemTableViewCell.swift */; };
+		0342799B1AEC4FD300F7EF21 /* AboutMeSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 034279991AEC4FD300F7EF21 /* AboutMeSectionHeader.xib */; };
 		035E87261AE1D1ED00654B32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E87251AE1D1ED00654B32 /* AppDelegate.swift */; };
 		035E872B1AE1D1ED00654B32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 035E87291AE1D1ED00654B32 /* Main.storyboard */; };
 		035E872D1AE1D1ED00654B32 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 035E872C1AE1D1ED00654B32 /* Images.xcassets */; };
@@ -67,6 +68,7 @@
 		034279911AEC300500F7EF21 /* EducationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EducationItem.swift; path = Model/EducationItem.swift; sourceTree = "<group>"; };
 		034279941AEC311900F7EF21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/EducationItemCell.xib; sourceTree = "<group>"; };
 		034279961AEC3C9900F7EF21 /* EducationItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EducationItemTableViewCell.swift; path = View/EducationItemTableViewCell.swift; sourceTree = "<group>"; };
+		0342799A1AEC4FD300F7EF21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AboutMeSectionHeader.xib; sourceTree = "<group>"; };
 		035E87201AE1D1ED00654B32 /* Filipe Alvarenga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Filipe Alvarenga.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		035E87241AE1D1ED00654B32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		035E87251AE1D1ED00654B32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +132,18 @@
 				03D99B751AE9929100E4CC77 /* GreetingsView.swift */,
 			);
 			name = "Dots & Greetings";
+			sourceTree = "<group>";
+		};
+		034279981AEC3F6E00F7EF21 /* About Me */ = {
+			isa = PBXGroup;
+			children = (
+				0342798A1AEB732F00F7EF21 /* ProjectCell.xib */,
+				0342798F1AEC0B5C00F7EF21 /* ProjectTableViewCell.swift */,
+				034279931AEC311900F7EF21 /* EducationItemCell.xib */,
+				034279961AEC3C9900F7EF21 /* EducationItemTableViewCell.swift */,
+				034279991AEC4FD300F7EF21 /* AboutMeSectionHeader.xib */,
+			);
+			name = "About Me";
 			sourceTree = "<group>";
 		};
 		035E87171AE1D1ED00654B32 = {
@@ -197,8 +211,8 @@
 			children = (
 				03C21F821AE49B570033F89A /* Story.swift */,
 				0342798D1AEC0A6100F7EF21 /* Project.swift */,
-				034279851AEB643B00F7EF21 /* CustomAppearance.swift */,
 				034279911AEC300500F7EF21 /* EducationItem.swift */,
+				034279851AEB643B00F7EF21 /* CustomAppearance.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -209,10 +223,7 @@
 				035E87291AE1D1ED00654B32 /* Main.storyboard */,
 				03D99B5F1AE93F7600E4CC77 /* LaunchScreen.xib */,
 				034279891AEB721A00F7EF21 /* Dots & Greetings */,
-				0342798A1AEB732F00F7EF21 /* ProjectCell.xib */,
-				0342798F1AEC0B5C00F7EF21 /* ProjectTableViewCell.swift */,
-				034279931AEC311900F7EF21 /* EducationItemCell.xib */,
-				034279961AEC3C9900F7EF21 /* EducationItemTableViewCell.swift */,
+				034279981AEC3F6E00F7EF21 /* About Me */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -344,6 +355,7 @@
 				0376061E1AE2DBD900855F6A /* OpenSans-BoldItalic.ttf in Resources */,
 				0376061F1AE2DBD900855F6A /* OpenSans-ExtraBold.ttf in Resources */,
 				0342798C1AEB732F00F7EF21 /* ProjectCell.xib in Resources */,
+				0342799B1AEC4FD300F7EF21 /* AboutMeSectionHeader.xib in Resources */,
 				037606201AE2DBD900855F6A /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				037606211AE2DBD900855F6A /* OpenSans-Italic.ttf in Resources */,
 				037606221AE2DBD900855F6A /* OpenSans-Light.ttf in Resources */,
@@ -428,6 +440,14 @@
 				034279941AEC311900F7EF21 /* Base */,
 			);
 			name = EducationItemCell.xib;
+			sourceTree = "<group>";
+		};
+		034279991AEC4FD300F7EF21 /* AboutMeSectionHeader.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0342799A1AEC4FD300F7EF21 /* Base */,
+			);
+			name = AboutMeSectionHeader.xib;
 			sourceTree = "<group>";
 		};
 		035E87291AE1D1ED00654B32 /* Main.storyboard */ = {

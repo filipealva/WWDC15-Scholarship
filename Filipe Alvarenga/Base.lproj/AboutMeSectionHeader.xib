@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.95999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNj-He-ygk">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Section Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0f-kA-tLv">
+                    <rect key="frame" x="15" y="12" width="570" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Rp8-Oq-ssi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dNj-He-ygk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6Eh-c7-Xxo"/>
+                <constraint firstAttribute="trailing" secondItem="dNj-He-ygk" secondAttribute="trailing" id="8H1-Hq-tIG"/>
+                <constraint firstItem="i0f-kA-tLv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="QCg-Ca-Wbd"/>
+                <constraint firstAttribute="trailing" secondItem="i0f-kA-tLv" secondAttribute="trailing" constant="15" id="dBe-wE-UEk"/>
+                <constraint firstItem="dNj-He-ygk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kFD-S1-T9m"/>
+                <constraint firstItem="i0f-kA-tLv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="n7e-5P-anH"/>
+                <constraint firstAttribute="bottom" secondItem="dNj-He-ygk" secondAttribute="bottom" id="wFX-le-cXi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="883" y="387"/>
+        </view>
+    </objects>
+</document>

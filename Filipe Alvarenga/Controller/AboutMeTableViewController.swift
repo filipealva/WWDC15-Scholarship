@@ -43,6 +43,9 @@ class AboutMeTableViewController: UITableViewController {
     
         let projectNib = UINib(nibName: "ProjectCell", bundle: NSBundle.mainBundle())
         tableView.registerNib(projectNib, forCellReuseIdentifier: projectCellIdentifier)
+        
+        let educationItemNib = UINib(nibName: "EducationItemCell", bundle: NSBundle.mainBundle())
+        tableView.registerNib(educationItemNib, forCellReuseIdentifier: educationItemCellIdentifier)
     }
     
     // MARK: - Actions
@@ -56,18 +59,50 @@ class AboutMeTableViewController: UITableViewController {
 extension AboutMeTableViewController: UITableViewDataSource {
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        return 2
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return projects.count
+        if section == 0 {
+            return projects.count
+        } else {
+            return educationItems.count
+        }
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let projectCell = tableView.dequeueReusableCellWithIdentifier(projectCellIdentifier, forIndexPath: indexPath) as! ProjectTableViewCell
-        projectCell.project = projects[indexPath.row]
+        if indexPath.section == 0 {
+            let projectCell = tableView.dequeueReusableCellWithIdentifier(projectCellIdentifier, forIndexPath: indexPath) as! ProjectTableViewCell
+            projectCell.project = projects[indexPath.row]
+            
+            return projectCell
+        } else {
+            let educationItemCell = tableView.dequeueReusableCellWithIdentifier(educationItemCellIdentifier, forIndexPath: indexPath) as! EducationItemTableViewCell
+            educationItemCell.educationItem = educationItems[indexPath.row]
+            
+            return educationItemCell
+        }
+    }
+    
+}
+
+extension AboutMeTableViewController: UITableViewDelegate {
+    
+    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let sectionHeader = NSBundle.mainBundle().loadNibNamed("AboutMeSectionHeader", owner: self, options: nil)[0] as! UIView
+        let sectionTitle = sectionHeader.viewWithTag(100) as! UILabel
         
-        return projectCell
+        if section == 0 {
+            sectionTitle.text = "Projects"
+        } else {
+            sectionTitle.text = "Education"
+        }
+        
+        return sectionHeader
+    }
+    
+    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50.0
     }
     
 }

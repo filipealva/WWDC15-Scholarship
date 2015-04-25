@@ -10,7 +10,6 @@ import UIKit
 
 class ProjectTableViewCell: UITableViewCell {
 
-
     @IBOutlet weak var projectIcon: UIImageView!
     @IBOutlet weak var projectName: UILabel!
     @IBOutlet weak var projectDescription: UILabel!

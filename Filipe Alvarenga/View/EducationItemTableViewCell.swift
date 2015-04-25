@@ -10,10 +10,13 @@ import UIKit
 
 class EducationItemTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var educationItemTitle: UILabel!
-    @IBOutlet weak var educationItemDescription: UILabel!
-    @IBOutlet weak var educationItemDate: UILabel!
-    @IBOutlet weak var educationItemImage: UIImageView!
+    @IBOutlet weak var itemImage: UIImageView!
+    @IBOutlet weak var itemTitle: UILabel!
+    @IBOutlet weak var itemDescription: UILabel!
+    @IBOutlet weak var startDate: UILabel!
+    @IBOutlet weak var endDate: UILabel!
+    
+
     
     var educationItem: EducationItem! {
         didSet {
@@ -24,10 +27,11 @@ class EducationItemTableViewCell: UITableViewCell {
     // MARK: - Data Binding
     
     func configureEducationItem() {
-        educationItemTitle.text = educationItem.title
-        educationItemDescription.text = educationItem.description
-        educationItemDate.text = educationItem.date
-        educationItemImage.image = educationItem.image
+        itemTitle.text = educationItem.title
+        itemDescription.text = educationItem.description
+        startDate.text = educationItem.startDate
+        endDate.text = educationItem.endDate
+        itemImage.image = educationItem.image
     }
     
 }

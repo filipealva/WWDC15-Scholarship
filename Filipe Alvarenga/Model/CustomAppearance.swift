@@ -10,7 +10,7 @@ import Foundation
 
 struct CustomAppearance {
     
-    static let navFont = UIFont(name: "OpenSans-CondensedBold", size: 19.0)!
+    static let navFont = UIFont(name: "OpenSans-Bold", size: 17.0)!
     
     static func applyCustomAppearanceToNavigationBar() {
         UINavigationBar.appearance().translucent = false
