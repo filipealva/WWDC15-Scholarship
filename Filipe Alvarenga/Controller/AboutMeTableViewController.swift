@@ -27,6 +27,7 @@ class AboutMeTableViewController: UITableViewController {
     }()
     
     let projectCellIdentifier = "projectCell"
+    let educationItemCellIdentifier = "educationItemCell"
 
     override func viewDidLoad() {
         super.viewDidLoad()
