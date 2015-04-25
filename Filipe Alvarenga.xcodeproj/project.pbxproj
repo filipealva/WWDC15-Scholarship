@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		034279861AEB643B00F7EF21 /* CustomAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034279851AEB643B00F7EF21 /* CustomAppearance.swift */; };
+		034279881AEB64FA00F7EF21 /* AboutMeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034279871AEB64FA00F7EF21 /* AboutMeTableViewController.swift */; };
+		0342798C1AEB732F00F7EF21 /* ProjectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0342798A1AEB732F00F7EF21 /* ProjectCell.xib */; };
 		035E87261AE1D1ED00654B32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E87251AE1D1ED00654B32 /* AppDelegate.swift */; };
 		035E872B1AE1D1ED00654B32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 035E87291AE1D1ED00654B32 /* Main.storyboard */; };
 		035E872D1AE1D1ED00654B32 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 035E872C1AE1D1ED00654B32 /* Images.xcassets */; };
@@ -51,6 +54,9 @@
 		031B2D651AE2989B00696A29 /* OpenSans-CondBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-CondBold.ttf"; sourceTree = "<group>"; };
 		031B2D661AE298A200696A29 /* OpenSans-CondLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-CondLight.ttf"; sourceTree = "<group>"; };
 		031B2D671AE298A800696A29 /* OpenSans-CondLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-CondLightItalic.ttf"; sourceTree = "<group>"; };
+		034279851AEB643B00F7EF21 /* CustomAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomAppearance.swift; path = Model/CustomAppearance.swift; sourceTree = "<group>"; };
+		034279871AEB64FA00F7EF21 /* AboutMeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutMeTableViewController.swift; path = Controller/AboutMeTableViewController.swift; sourceTree = "<group>"; };
+		0342798B1AEB732F00F7EF21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ProjectCell.xib; sourceTree = "<group>"; };
 		035E87201AE1D1ED00654B32 /* Filipe Alvarenga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Filipe Alvarenga.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		035E87241AE1D1ED00654B32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		035E87251AE1D1ED00654B32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +111,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		034279891AEB721A00F7EF21 /* Dots & Greetings */ = {
+			isa = PBXGroup;
+			children = (
+				03D99B721AE98B0100E4CC77 /* GreetingsView.xib */,
+				035E874C1AE1D71700654B32 /* DotView.xib */,
+				0376061B1AE29DEE00855F6A /* DotView.swift */,
+				03D99B751AE9929100E4CC77 /* GreetingsView.swift */,
+			);
+			name = "Dots & Greetings";
+			sourceTree = "<group>";
+		};
 		035E87171AE1D1ED00654B32 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				03C21F821AE49B570033F89A /* Story.swift */,
+				034279851AEB643B00F7EF21 /* CustomAppearance.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -178,10 +196,8 @@
 			children = (
 				035E87291AE1D1ED00654B32 /* Main.storyboard */,
 				03D99B5F1AE93F7600E4CC77 /* LaunchScreen.xib */,
-				03D99B721AE98B0100E4CC77 /* GreetingsView.xib */,
-				035E874C1AE1D71700654B32 /* DotView.xib */,
-				0376061B1AE29DEE00855F6A /* DotView.swift */,
-				03D99B751AE9929100E4CC77 /* GreetingsView.swift */,
+				034279891AEB721A00F7EF21 /* Dots & Greetings */,
+				0342798A1AEB732F00F7EF21 /* ProjectCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -191,6 +207,7 @@
 			children = (
 				035E87511AE1D7E200654B32 /* DotsViewController.swift */,
 				03D99B621AE969B700E4CC77 /* StartViewController.swift */,
+				034279871AEB64FA00F7EF21 /* AboutMeTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -311,6 +328,7 @@
 				0376061D1AE2DBD900855F6A /* OpenSans-Bold.ttf in Resources */,
 				0376061E1AE2DBD900855F6A /* OpenSans-BoldItalic.ttf in Resources */,
 				0376061F1AE2DBD900855F6A /* OpenSans-ExtraBold.ttf in Resources */,
+				0342798C1AEB732F00F7EF21 /* ProjectCell.xib in Resources */,
 				037606201AE2DBD900855F6A /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				037606211AE2DBD900855F6A /* OpenSans-Italic.ttf in Resources */,
 				037606221AE2DBD900855F6A /* OpenSans-Light.ttf in Resources */,
@@ -350,7 +368,9 @@
 				035E87261AE1D1ED00654B32 /* AppDelegate.swift in Sources */,
 				03D99B6D1AE9712C00E4CC77 /* FBShimmeringView.m in Sources */,
 				035E87521AE1D7E200654B32 /* DotsViewController.swift in Sources */,
+				034279861AEB643B00F7EF21 /* CustomAppearance.swift in Sources */,
 				0376061C1AE29DEE00855F6A /* DotView.swift in Sources */,
+				034279881AEB64FA00F7EF21 /* AboutMeTableViewController.swift in Sources */,
 				03C21F831AE49B570033F89A /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +394,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		0342798A1AEB732F00F7EF21 /* ProjectCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0342798B1AEB732F00F7EF21 /* Base */,
+			);
+			name = ProjectCell.xib;
+			sourceTree = "<group>";
+		};
 		035E87291AE1D1ED00654B32 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -69,6 +69,11 @@
                         <constraint firstAttribute="trailing" secondItem="WJb-Lx-wSR" secondAttribute="trailing" constant="15" id="agy-vg-hD1"/>
                         <constraint firstAttribute="bottom" secondItem="WJb-Lx-wSR" secondAttribute="bottom" id="ikZ-GU-Upd"/>
                     </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="ikZ-GU-Upd"/>
+                        </mask>
+                    </variation>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CYg-cz-GvU" customClass="FBShimmeringView">
                     <rect key="frame" x="278" y="506" width="44" height="44"/>
