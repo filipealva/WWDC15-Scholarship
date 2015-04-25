@@ -20,10 +20,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="igA-rP-VzP">
-                    <rect key="frame" x="83" y="150" width="502" height="300"/>
+                    <rect key="frame" x="80" y="150" width="505" height="300"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story title." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZv-cK-8p9">
-                            <rect key="frame" x="15" y="15" width="472" height="30"/>
+                            <rect key="frame" x="15" y="15" width="475" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="s3l-Mg-BsN"/>
                             </constraints>
@@ -32,23 +32,23 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2oz-wt-E8W">
-                            <rect key="frame" x="15" y="49" width="472" height="1"/>
-                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <rect key="frame" x="15" y="49" width="475" height="1"/>
+                            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="YtW-ll-iYN"/>
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story date." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dne-cL-2xO">
-                            <rect key="frame" x="15" y="54" width="472" height="19"/>
+                            <rect key="frame" x="15" y="54" width="475" height="19"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="19" id="KYO-Tq-GNO"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="14"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story description." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IvD-sG-wTf">
-                            <rect key="frame" x="15" y="73" width="472" height="21"/>
+                            <rect key="frame" x="15" y="73" width="475" height="21"/>
                             <constraints>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="slY-gZ-d9c"/>
                             </constraints>
@@ -74,7 +74,7 @@
                     </constraints>
                 </view>
                 <view tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qx9-bo-zwa">
-                    <rect key="frame" x="17" y="275" width="50" height="50"/>
+                    <rect key="frame" x="15" y="275" width="50" height="50"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="74v-6i-90m"/>
@@ -86,8 +86,8 @@
             <constraints>
                 <constraint firstAttribute="centerY" secondItem="igA-rP-VzP" secondAttribute="centerY" id="NKl-BI-5H3"/>
                 <constraint firstAttribute="trailing" secondItem="igA-rP-VzP" secondAttribute="trailing" constant="15" id="XbJ-ZL-qhE"/>
-                <constraint firstItem="Qx9-bo-zwa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="17" id="bL7-sr-LQk"/>
-                <constraint firstItem="igA-rP-VzP" firstAttribute="leading" secondItem="Qx9-bo-zwa" secondAttribute="trailing" constant="16" id="j5v-Qs-2b0"/>
+                <constraint firstItem="Qx9-bo-zwa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="bL7-sr-LQk"/>
+                <constraint firstItem="igA-rP-VzP" firstAttribute="leading" secondItem="Qx9-bo-zwa" secondAttribute="trailing" constant="15" id="j5v-Qs-2b0"/>
                 <constraint firstAttribute="centerY" secondItem="Qx9-bo-zwa" secondAttribute="centerY" id="poY-2O-ajS"/>
             </constraints>
             <connections>

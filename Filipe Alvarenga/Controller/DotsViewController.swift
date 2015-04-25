@@ -15,12 +15,19 @@ class DotsViewController: UIViewController {
     @IBOutlet weak var baseScrollView: UIScrollView!
     @IBOutlet weak var bottomBar: UIView!
     
+    lazy var greetingsView: GreetingsView = {
+       let greetingsView =  NSBundle.mainBundle().loadNibNamed("GreetingsView", owner: self, options: nil)[0] as! GreetingsView
+       greetingsView.frame = CGRect(origin: CGPoint(x: 0.0, y: 0.0), size: self.view.frame.size)
+       
+       return greetingsView
+    }()
+    
     lazy var line: UIView = { [unowned self] in
         let firstDotView = self.dotViews.first!
         let firstDot = firstDotView.dot
         firstDot.layoutIfNeeded()
-        
-        let line = UIView(frame: CGRect(x: firstDot.center.x, y: firstDot.center.y, width: 3.0, height: 0.0))
+
+        let line = UIView(frame: CGRect(x: firstDotView.dot.center.x - 1.5, y: firstDot.center.y * 3, width: 3.0, height: 0.0))
         line.backgroundColor = UIColor.blackColor()
         line.layer.cornerRadius = 2.0
         
