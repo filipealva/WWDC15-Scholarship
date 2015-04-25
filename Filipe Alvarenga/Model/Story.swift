@@ -25,6 +25,14 @@ class Story {
         self.title = dict["title"] as? String ?? "No title"
         self.description = dict["description"] as? String ?? "No description"
         self.date = dict["date"] as? String ?? "No date"
+        
+        if let date = dict["date"] as? String {
+            self.date = date
+        } else {
+            let dateFormatter = NSDateFormatter()
+            dateFormatter.dateFormat = "MMMM yyyy"
+            self.date = dateFormatter.stringFromDate(NSDate())
+        }
     }
     
 }
