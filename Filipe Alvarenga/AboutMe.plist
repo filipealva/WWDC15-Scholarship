@@ -2,8 +2,39 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>education</key>
-	<array/>
+	<key>educationItems</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>BEPiD - Brazilian Education Program for iOS Development</string>
+			<key>description</key>
+			<string>This program was a game-changing in my education, it was crucial for me to discover what I love and what I want to do. A learnt a lot about iOS Development, about all the phases related to product development and the most important thing: I learnt a new way to learn, it turn me into a passionate learner.</string>
+			<key>date</key>
+			<string>Started at: November 2013 Ended at: December 2014</string>
+			<key>imageName</key>
+			<string>bepid-icon</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Systems Analisys and Development Degree</string>
+			<key>description</key>
+			<string>I&apos;m undergradute in Systems Analisys and Development.</string>
+			<key>date</key>
+			<string>Started at: July 2012 Completion preview: March 2017</string>
+			<key>imageName</key>
+			<string>degree-icon</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Technical High School</string>
+			<key>description</key>
+			<string>I went to a Technical High School where I&apos;ve studied 2 years about programming in parallel with the normal classes. </string>
+			<key>date</key>
+			<string>Started at: March 2010 Ended at: March 2012</string>
+			<key>imageName</key>
+			<string>tech-icon</string>
+		</dict>
+	</array>
 	<key>projects</key>
 	<array>
 		<dict>
