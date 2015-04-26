@@ -16,12 +16,17 @@ class EducationItemTableViewCell: UITableViewCell {
     @IBOutlet weak var startDate: UILabel!
     @IBOutlet weak var endDate: UILabel!
     
-
-    
     var educationItem: EducationItem! {
         didSet {
             configureEducationItem()
         }
+    }
+    
+    override func drawRect(rect: CGRect) {
+        super.drawRect(rect)
+        
+        itemImage.layer.borderWidth = 1.0
+        itemImage.layer.borderColor = UIColor.groupTableViewBackgroundColor().CGColor
     }
     
     // MARK: - Data Binding

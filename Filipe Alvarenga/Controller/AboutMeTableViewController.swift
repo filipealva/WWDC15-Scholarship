@@ -105,4 +105,15 @@ extension AboutMeTableViewController: UITableViewDelegate {
         return 50.0
     }
     
+    override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: view.bounds.width, height: 1.0))
+        footerView.backgroundColor = UIColor.groupTableViewBackgroundColor()
+        
+        return footerView
+    }
+    
+    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 1.0
+    }
+    
 }

@@ -24,8 +24,8 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me" translatesAutoresizingMaskIntoConstraints="NO" id="iIZ-eY-dzD">
                         <rect key="frame" x="15" y="15" width="72" height="72"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="72" id="Chq-x7-xhP"/>
-                            <constraint firstAttribute="width" constant="72" id="Rb5-7R-sY7"/>
+                            <constraint firstAttribute="height" priority="999" constant="72" id="Chq-x7-xhP"/>
+                            <constraint firstAttribute="width" priority="999" constant="72" id="Rb5-7R-sY7"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -33,9 +33,11 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="App name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KlA-h6-oWx">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" placeholderIntrinsicWidth="497" placeholderIntrinsicHeight="24" text="App name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KlA-h6-oWx">
                         <rect key="frame" x="95" y="15" width="497" height="24"/>
                         <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="Ih7-ZV-JZm"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31" id="J80-LH-LyC"/>
                             <constraint firstAttribute="height" constant="24" id="bL9-mK-O2d"/>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="dDF-nI-CJq"/>
                         </constraints>
@@ -44,27 +46,28 @@
                         <nil key="highlightedColor"/>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="J80-LH-LyC"/>
                                 <exclude reference="bL9-mK-O2d"/>
+                                <exclude reference="dDF-nI-CJq"/>
                             </mask>
                         </variation>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="App description." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPa-xv-VOr">
-                        <rect key="frame" x="95" y="39" width="497" height="27"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" placeholderIntrinsicWidth="497" placeholderIntrinsicHeight="20" text="App description." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPa-xv-VOr">
+                        <rect key="frame" x="95" y="42" width="497" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="27" id="WSp-wy-e1j"/>
-                            <constraint firstAttribute="height" constant="22" id="rck-RZ-TgR"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="4EH-dd-Kcs"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="rck-RZ-TgR"/>
+                                <exclude reference="4EH-dd-Kcs"/>
                             </mask>
                         </variation>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slt-cl-Guf">
-                        <rect key="frame" x="485" y="81" width="100" height="35"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slt-cl-Guf">
+                        <rect key="frame" x="485" y="77" width="100" height="35"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="35" id="KzB-7l-4se"/>
                             <constraint firstAttribute="width" constant="100" id="bf7-RM-Fws"/>
@@ -86,16 +89,16 @@
                     <constraint firstAttribute="trailing" secondItem="KlA-h6-oWx" secondAttribute="trailing" constant="8" id="64H-Ca-MVe"/>
                     <constraint firstAttribute="trailing" secondItem="slt-cl-Guf" secondAttribute="trailing" constant="15" id="6L8-8f-AWh"/>
                     <constraint firstItem="slt-cl-Guf" firstAttribute="top" secondItem="WPa-xv-VOr" secondAttribute="bottom" constant="15" id="HWg-YK-9WK"/>
-                    <constraint firstAttribute="bottom" secondItem="slt-cl-Guf" secondAttribute="bottom" constant="15" id="OMA-9d-qLs"/>
-                    <constraint firstItem="WPa-xv-VOr" firstAttribute="top" secondItem="KlA-h6-oWx" secondAttribute="bottom" id="YHz-KC-i5l"/>
-                    <constraint firstItem="KlA-h6-oWx" firstAttribute="top" secondItem="JSS-Eg-sL6" secondAttribute="top" constant="15" id="Zc6-H4-GUR"/>
+                    <constraint firstItem="WPa-xv-VOr" firstAttribute="top" secondItem="KlA-h6-oWx" secondAttribute="bottom" constant="3" id="YHz-KC-i5l"/>
                     <constraint firstItem="iIZ-eY-dzD" firstAttribute="leading" secondItem="JSS-Eg-sL6" secondAttribute="leading" constant="15" id="ba1-Ev-qaB"/>
                     <constraint firstAttribute="trailing" secondItem="WPa-xv-VOr" secondAttribute="trailing" constant="8" id="eUi-XG-gHI"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iIZ-eY-dzD" secondAttribute="bottom" priority="999" constant="44" id="iPa-F6-RqP"/>
                     <constraint firstItem="KlA-h6-oWx" firstAttribute="leading" secondItem="iIZ-eY-dzD" secondAttribute="trailing" constant="8" id="jaz-a6-E1W"/>
+                    <constraint firstAttribute="bottom" secondItem="slt-cl-Guf" secondAttribute="bottom" constant="19" id="oY9-C8-nJ7"/>
+                    <constraint firstItem="KlA-h6-oWx" firstAttribute="top" secondItem="JSS-Eg-sL6" secondAttribute="top" constant="15" id="omY-no-MtO"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="appStoreButton" destination="slt-cl-Guf" id="iHB-85-zhU"/>
                 <outlet property="projectDescription" destination="WPa-xv-VOr" id="nfu-Iq-5e5"/>
                 <outlet property="projectIcon" destination="iIZ-eY-dzD" id="bgF-Cw-5ab"/>
                 <outlet property="projectName" destination="KlA-h6-oWx" id="rwZ-RC-mMS"/>
