@@ -54,6 +54,37 @@ class AboutMeTableViewController: UITableViewController {
     
     // MARK: - Actions
     
+    func goToGitHub(sender: UIButton) {
+        let project = projects[sender.tag]
+        
+        if let gitHub = project.gitHub {
+            UIApplication.sharedApplication().openURL(NSURL(string: gitHub)!)
+        } else {
+            let noGitHubURLAlert = UIAlertController(title: "Oops!", message: "Sorry, we can't get GitHub URL.", preferredStyle: .Alert)
+            
+            let confirmAction = UIAlertAction(title: "Ok, I still love you.", style: .Default, handler: nil)
+            noGitHubURLAlert.addAction(confirmAction)
+            
+            presentViewController(noGitHubURLAlert, animated: true, completion: nil)
+        }
+        
+    }
+    
+    func goToAppStore(sender: UIButton) {
+        let project = projects[sender.tag]
+        
+        if let appStore = project.appStore {
+            UIApplication.sharedApplication().openURL(NSURL(string: appStore)!)
+        } else {
+            let noAppStoreURLAlert = UIAlertController(title: "Oops!", message: "Sorry, we can't get App Store URL.", preferredStyle: .Alert)
+            
+            let confirmAction = UIAlertAction(title: "Ok, I still love you.", style: .Default, handler: nil)
+            noAppStoreURLAlert.addAction(confirmAction)
+            
+            presentViewController(noAppStoreURLAlert, animated: true, completion: nil)
+        }
+    }
+    
     @IBAction func closeAboutMe(sender: UIBarButtonItem) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
@@ -81,12 +112,18 @@ extension AboutMeTableViewController: UITableViewDataSource {
             if let gitHub = project.gitHub {
                 let projectWithGitHubCell = tableView.dequeueReusableCellWithIdentifier(projectWithGitHubCellIdentifier, forIndexPath: indexPath) as! ProjectWithGitHubTableViewCell
                 projectWithGitHubCell.project = project
+                projectWithGitHubCell.gitHubButton.tag = indexPath.row
+                projectWithGitHubCell.appStoreButton.tag = indexPath.row
+                projectWithGitHubCell.gitHubButton.addTarget(self, action: "goToGitHub:", forControlEvents: .TouchUpInside)
+                projectWithGitHubCell.appStoreButton.addTarget(self, action: "goToAppStore:", forControlEvents: .TouchUpInside)
                 
                 return projectWithGitHubCell
             }
             
             let projectCell = tableView.dequeueReusableCellWithIdentifier(projectCellIdentifier, forIndexPath: indexPath) as! ProjectTableViewCell
             projectCell.project = project
+            projectCell.appStoreButton.tag = indexPath.row
+            projectCell.appStoreButton.addTarget(self, action: "goToAppStore:", forControlEvents: .TouchUpInside)
             
             return projectCell
         } else {
