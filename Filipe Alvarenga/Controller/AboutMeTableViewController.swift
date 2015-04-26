@@ -27,6 +27,7 @@ class AboutMeTableViewController: UITableViewController {
     }()
     
     let projectCellIdentifier = "projectCell"
+    let projectWithGitHubCellIdentifier = "projectWithGitHubCell"
     let educationItemCellIdentifier = "educationItemCell"
 
     override func viewDidLoad() {
@@ -43,6 +44,9 @@ class AboutMeTableViewController: UITableViewController {
     
         let projectNib = UINib(nibName: "ProjectCell", bundle: NSBundle.mainBundle())
         tableView.registerNib(projectNib, forCellReuseIdentifier: projectCellIdentifier)
+        
+        let projectWithGitHubNib = UINib(nibName: "ProjectWithGitHubCell", bundle: NSBundle.mainBundle())
+        tableView.registerNib(projectWithGitHubNib, forCellReuseIdentifier: projectWithGitHubCellIdentifier)
         
         let educationItemNib = UINib(nibName: "EducationItemCell", bundle: NSBundle.mainBundle())
         tableView.registerNib(educationItemNib, forCellReuseIdentifier: educationItemCellIdentifier)
@@ -72,8 +76,17 @@ extension AboutMeTableViewController: UITableViewDataSource {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
+            let project = projects[indexPath.row]
+            
+            if let gitHub = project.gitHub {
+                let projectWithGitHubCell = tableView.dequeueReusableCellWithIdentifier(projectWithGitHubCellIdentifier, forIndexPath: indexPath) as! ProjectWithGitHubTableViewCell
+                projectWithGitHubCell.project = project
+                
+                return projectWithGitHubCell
+            }
+            
             let projectCell = tableView.dequeueReusableCellWithIdentifier(projectCellIdentifier, forIndexPath: indexPath) as! ProjectTableViewCell
-            projectCell.project = projects[indexPath.row]
+            projectCell.project = project
             
             return projectCell
         } else {

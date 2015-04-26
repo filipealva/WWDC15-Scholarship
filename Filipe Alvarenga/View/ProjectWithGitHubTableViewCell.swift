@@ -1,5 +1,5 @@
 //
-//  ProjectTableViewCell.swift
+//  ProjectWithGitHubTableViewCell.swift
 //  Filipe Alvarenga
 //
 //  Created by Filipe Alvarenga on 25/04/15.
@@ -8,13 +8,14 @@
 
 import UIKit
 
-class ProjectTableViewCell: UITableViewCell {
+class ProjectWithGitHubTableViewCell: UITableViewCell {
 
     @IBOutlet weak var projectIcon: UIImageView!
     @IBOutlet weak var projectName: UILabel!
     @IBOutlet weak var projectDescription: UILabel!
+    @IBOutlet weak var gitHubButton: UIButton!
     @IBOutlet weak var appStoreButton: UIButton!
-    
+
     var project: Project! {
         didSet {
             configureProject()
@@ -26,6 +27,7 @@ class ProjectTableViewCell: UITableViewCell {
         
         projectIcon.layer.borderWidth = 1.0
         projectIcon.layer.borderColor = UIColor.groupTableViewBackgroundColor().CGColor
+        gitHubButton.layer.borderWidth = 0.5
         appStoreButton.layer.borderWidth = 0.5
     }
     
@@ -42,5 +44,4 @@ class ProjectTableViewCell: UITableViewCell {
         projectName.text = project.name
         projectDescription.text = project.description
     }
-
 }

@@ -38,6 +38,8 @@
 		037606291AE2DBD900855F6A /* OpenSans-CondBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 031B2D651AE2989B00696A29 /* OpenSans-CondBold.ttf */; };
 		03C21F831AE49B570033F89A /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C21F821AE49B570033F89A /* Story.swift */; };
 		03C21F851AE49DC80033F89A /* AboutMe.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03C21F841AE49DC80033F89A /* AboutMe.plist */; };
+		03D800501AEC78040008CAB3 /* ProjectWithGitHubCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D8004E1AEC78040008CAB3 /* ProjectWithGitHubCell.xib */; };
+		03D800521AEC79DD0008CAB3 /* ProjectWithGitHubTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D800511AEC79DD0008CAB3 /* ProjectWithGitHubTableViewCell.swift */; };
 		03D99B611AE93F7600E4CC77 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D99B5F1AE93F7600E4CC77 /* LaunchScreen.xib */; };
 		03D99B631AE969B700E4CC77 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D99B621AE969B700E4CC77 /* StartViewController.swift */; };
 		03D99B6C1AE9712C00E4CC77 /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D99B691AE9712C00E4CC77 /* FBShimmeringLayer.m */; };
@@ -92,6 +94,8 @@
 		0376061B1AE29DEE00855F6A /* DotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DotView.swift; path = View/DotView.swift; sourceTree = "<group>"; };
 		03C21F821AE49B570033F89A /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Story.swift; path = Model/Story.swift; sourceTree = "<group>"; };
 		03C21F841AE49DC80033F89A /* AboutMe.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AboutMe.plist; sourceTree = "<group>"; };
+		03D8004F1AEC78040008CAB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ProjectWithGitHubCell.xib; sourceTree = "<group>"; };
+		03D800511AEC79DD0008CAB3 /* ProjectWithGitHubTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectWithGitHubTableViewCell.swift; path = View/ProjectWithGitHubTableViewCell.swift; sourceTree = "<group>"; };
 		03D99B601AE93F7600E4CC77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		03D99B621AE969B700E4CC77 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartViewController.swift; path = Controller/StartViewController.swift; sourceTree = "<group>"; };
 		03D99B651AE9712C00E4CC77 /* Filipe Alvarenga-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Filipe Alvarenga-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -137,6 +141,8 @@
 		034279981AEC3F6E00F7EF21 /* About Me */ = {
 			isa = PBXGroup;
 			children = (
+				03D8004E1AEC78040008CAB3 /* ProjectWithGitHubCell.xib */,
+				03D800511AEC79DD0008CAB3 /* ProjectWithGitHubTableViewCell.swift */,
 				0342798A1AEB732F00F7EF21 /* ProjectCell.xib */,
 				0342798F1AEC0B5C00F7EF21 /* ProjectTableViewCell.swift */,
 				034279931AEC311900F7EF21 /* EducationItemCell.xib */,
@@ -364,6 +370,7 @@
 				037606241AE2DBD900855F6A /* OpenSans-Regular.ttf in Resources */,
 				037606251AE2DBD900855F6A /* OpenSans-Semibold.ttf in Resources */,
 				037606261AE2DBD900855F6A /* OpenSans-SemiboldItalic.ttf in Resources */,
+				03D800501AEC78040008CAB3 /* ProjectWithGitHubCell.xib in Resources */,
 				037606271AE2DBD900855F6A /* OpenSans-CondLightItalic.ttf in Resources */,
 				037606281AE2DBD900855F6A /* OpenSans-CondLight.ttf in Resources */,
 				037606291AE2DBD900855F6A /* OpenSans-CondBold.ttf in Resources */,
@@ -400,6 +407,7 @@
 				034279861AEB643B00F7EF21 /* CustomAppearance.swift in Sources */,
 				034279901AEC0B5C00F7EF21 /* ProjectTableViewCell.swift in Sources */,
 				0342798E1AEC0A6100F7EF21 /* Project.swift in Sources */,
+				03D800521AEC79DD0008CAB3 /* ProjectWithGitHubTableViewCell.swift in Sources */,
 				0376061C1AE29DEE00855F6A /* DotView.swift in Sources */,
 				034279881AEB64FA00F7EF21 /* AboutMeTableViewController.swift in Sources */,
 				034279971AEC3C9900F7EF21 /* EducationItemTableViewCell.swift in Sources */,
@@ -464,6 +472,14 @@
 				035E874D1AE1D71700654B32 /* Base */,
 			);
 			name = DotView.xib;
+			sourceTree = "<group>";
+		};
+		03D8004E1AEC78040008CAB3 /* ProjectWithGitHubCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03D8004F1AEC78040008CAB3 /* Base */,
+			);
+			name = ProjectWithGitHubCell.xib;
 			sourceTree = "<group>";
 		};
 		03D99B5F1AE93F7600E4CC77 /* LaunchScreen.xib */ = {
