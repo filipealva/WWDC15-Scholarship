@@ -10,6 +10,8 @@ import UIKit
 
 class StartViewController: UIViewController {
 
+    // MARK: - Properties
+
     @IBOutlet weak var quoteContainerHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var jobsQuote: UILabel!
     @IBOutlet weak var jobsName: UILabel!
@@ -42,6 +44,8 @@ class StartViewController: UIViewController {
         shimmeringView.shimmeringEndFadeDuration = 0.3
         quoteContainerHeightConstraint.constant = jobsName.frame.origin.y + jobsName.frame.size.height
     }
+    
+    // MARK: - Actions
     
     func start(tapGesture: UITapGestureRecognizer) {
         let tappedPoint = tapGesture.locationInView(view)

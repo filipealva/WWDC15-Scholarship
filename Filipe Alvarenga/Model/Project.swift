@@ -8,6 +8,16 @@
 
 import Foundation
 
+/**
+    Project model class.
+
+    :param: name The project name.
+    :param: description The project description.
+    :param: appStore The URL of the project in App Store.
+    :param: gitHub The URL of the repository of this project at GitHub.
+    :param: image The image of this project.
+*/
+
 class Project {
     
     var name: String!

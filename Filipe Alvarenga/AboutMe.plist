@@ -20,7 +20,7 @@
 			<key>title</key>
 			<string>Systems Analisys and Development Degree</string>
 			<key>description</key>
-			<string>I&apos;m an undergradute in Systems Analisys and Development.</string>
+			<string>I&apos;m an undergraduate in Systems Analysis and Development.</string>
 			<key>startDate</key>
 			<string>Started at: July 2012</string>
 			<key>endDate</key>
@@ -47,7 +47,7 @@
 			<key>name</key>
 			<string>LimPOA - Smart Waste Disposal</string>
 			<key>description</key>
-			<string>LimPOA is the easiest way to find places where you can dispose your waste in an environmentally-friendly manner in the city of Porto Alegre. You have a list of the closest places to you, separated by categories. The data are provided by the city of Porto Alegre througt an open-data platform.</string>
+			<string>LimPOA is the easiest way to find places where you can dispose your waste in an environmentally-friendly manner in the city of Porto Alegre. You have a list of the closest places to you, separated by categories. The data are provided by the city of Porto Alegre through an open-data platform.</string>
 			<key>imageName</key>
 			<string>limpoa-icon</string>
 			<key>appstore</key>

@@ -9,6 +9,8 @@
 import UIKit
 
 class DotView: UIView {
+
+    // MARK: - Properties
     
     @IBOutlet weak var storyContainerHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var dot: UIView!
@@ -22,6 +24,8 @@ class DotView: UIView {
             configureStory()
         }
     }
+    
+    // MARK: - Life Cycle
     
     override func drawRect(rect: CGRect) {
         super.drawRect(rect)

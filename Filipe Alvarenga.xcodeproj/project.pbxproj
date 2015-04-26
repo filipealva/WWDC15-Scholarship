@@ -131,9 +131,9 @@
 			isa = PBXGroup;
 			children = (
 				03D99B721AE98B0100E4CC77 /* GreetingsView.xib */,
+				03D99B751AE9929100E4CC77 /* GreetingsView.swift */,
 				035E874C1AE1D71700654B32 /* DotView.xib */,
 				0376061B1AE29DEE00855F6A /* DotView.swift */,
-				03D99B751AE9929100E4CC77 /* GreetingsView.swift */,
 			);
 			name = "Dots & Greetings";
 			sourceTree = "<group>";

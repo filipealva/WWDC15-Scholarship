@@ -10,6 +10,8 @@ import UIKit
 import MessageUI
 
 class AboutMeTableViewController: UITableViewController {
+
+    // MARK: - Properties
     
     lazy var projects: [Project] = {
         let pathToAboutMe = NSBundle.mainBundle().pathForResource("AboutMe", ofType: "plist")!
@@ -102,6 +104,8 @@ class AboutMeTableViewController: UITableViewController {
 }
 
 extension AboutMeTableViewController: UITableViewDataSource {
+
+    // MARK: - UITableViewDataSource
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 2
@@ -147,6 +151,8 @@ extension AboutMeTableViewController: UITableViewDataSource {
 }
 
 extension AboutMeTableViewController: UITableViewDelegate {
+
+    // MARK: - UITableViewDelegate
     
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let sectionHeader = NSBundle.mainBundle().loadNibNamed("AboutMeSectionHeader", owner: self, options: nil)[0] as! UIView
@@ -176,9 +182,15 @@ extension AboutMeTableViewController: UITableViewDelegate {
         return 1.0
     }
     
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        cell.layoutIfNeeded()
+    }
+    
 }
 
 extension AboutMeTableViewController: MFMailComposeViewControllerDelegate {
+
+    // MARK: - MFMailComposeViewControllerDelegate
     
     func mailComposeController(controller: MFMailComposeViewController!, didFinishWithResult result: MFMailComposeResult, error: NSError!) {
         let emailFeedback = UIAlertController(title: nil, message: nil, preferredStyle: .Alert)

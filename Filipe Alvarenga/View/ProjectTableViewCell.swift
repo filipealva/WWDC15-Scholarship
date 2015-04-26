@@ -10,6 +10,8 @@ import UIKit
 
 class ProjectTableViewCell: UITableViewCell {
 
+    // MARK: - Properties
+
     @IBOutlet weak var projectIcon: UIImageView!
     @IBOutlet weak var projectName: UILabel!
     @IBOutlet weak var projectDescription: UILabel!
@@ -20,6 +22,8 @@ class ProjectTableViewCell: UITableViewCell {
             configureProject()
         }
     }
+    
+    // MARK: - Life Cycle
     
     override func drawRect(rect: CGRect) {
         super.drawRect(rect)
@@ -32,7 +36,7 @@ class ProjectTableViewCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        projectName.layoutIfNeeded()
+        layoutIfNeeded()
     }
     
     // MARK: - Data Binding

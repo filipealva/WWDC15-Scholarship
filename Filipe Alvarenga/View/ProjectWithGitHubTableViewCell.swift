@@ -10,6 +10,8 @@ import UIKit
 
 class ProjectWithGitHubTableViewCell: UITableViewCell {
 
+    // MARK: - Properties
+
     @IBOutlet weak var projectIcon: UIImageView!
     @IBOutlet weak var projectName: UILabel!
     @IBOutlet weak var projectDescription: UILabel!
@@ -21,6 +23,8 @@ class ProjectWithGitHubTableViewCell: UITableViewCell {
             configureProject()
         }
     }
+    
+    // MARK: - Life Cycle
     
     override func drawRect(rect: CGRect) {
         super.drawRect(rect)
@@ -34,7 +38,7 @@ class ProjectWithGitHubTableViewCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        projectName.layoutIfNeeded()
+        layoutIfNeeded()
     }
     
     // MARK: - Data Binding

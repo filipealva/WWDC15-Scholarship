@@ -8,6 +8,17 @@
 
 import Foundation
 
+/**
+    Education Item model class.
+
+    :param: title The education item title.
+    :param: description The education item description.
+    :param: startDate The date that this education item was started.
+    :param: endDate The date that this education item was ended (or it's preview).
+    :param: image The image of this education item.
+*/
+
+
 class EducationItem {
     
     var title: String!
