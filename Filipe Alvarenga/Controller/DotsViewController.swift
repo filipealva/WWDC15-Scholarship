@@ -15,6 +15,8 @@ class DotsViewController: UIViewController {
     @IBOutlet weak var baseScrollView: UIScrollView!
     @IBOutlet weak var bottomBar: UIView!
     
+    var needsDisplayIntro = true
+    
     lazy var greetingsView: GreetingsView = {
        let greetingsView =  NSBundle.mainBundle().loadNibNamed("GreetingsView", owner: self, options: nil)[0] as! GreetingsView
        greetingsView.frame = CGRect(origin: CGPoint(x: 0.0, y: 0.0), size: self.view.frame.size)
@@ -90,7 +92,9 @@ class DotsViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        showStartViewController()
+        if needsDisplayIntro {
+            showStartViewController()
+        }
     }
 
     override func prefersStatusBarHidden() -> Bool {
@@ -110,10 +114,15 @@ class DotsViewController: UIViewController {
         baseScrollView.contentSize = CGSize(width: view.bounds.width, height: view.bounds.height * CGFloat(dotViews.count + 1))
     }
     
-    // MARK: - Navigation 
+    // MARK: - Navigation
     
     func showStartViewController() {
-        self.performSegueWithIdentifier("showStartViewController", sender: self)
+        let startViewController = storyboard!.instantiateViewControllerWithIdentifier("StartViewController") as! StartViewController
+        startViewController.setNeedsDisplayIntro = { [unowned self] in
+            self.needsDisplayIntro = false
+        }
+        
+        presentViewController(startViewController, animated: false, completion: nil)
     }
 
 }

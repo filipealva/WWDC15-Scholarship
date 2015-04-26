@@ -47,7 +47,7 @@
 			<key>name</key>
 			<string>LimPOA - Smart Waste Disposal</string>
 			<key>description</key>
-			<string>LimPOA is the easiest way to find places where you can dispose your waste in an environmentally-friendly manner in the city of Porto Alegre, delivery points of frying oil, bins and containers. You have a list of the closest places to you, separated by categories. Also you can see informations as telephone, opening hours and address. Do not know the address? Trace a route on map through LimPOA, is very simple! The data of selective waste collection points, bins and containers are powered by the city of Porto Alegre through the project #datapoa.</string>
+			<string>LimPOA is the easiest way to find places where you can dispose your waste in an environmentally-friendly manner in the city of Porto Alegre. You have a list of the closest places to you, separated by categories. The data are provided by the city of Porto Alegre througt an open-data platform.</string>
 			<key>imageName</key>
 			<string>limpoa-icon</string>
 			<key>appstore</key>
@@ -67,10 +67,7 @@
 			<key>name</key>
 			<string>Clip - Find the Better Beauty Service</string>
 			<key>description</key>
-			<string>Clip is a brand new social network that connect customers with beauty centers and professionals.
-With Clip you can follow your favorite beauty professionals, receive their portfolio updates and share with your friends. Also you can discover what is trending and meet a new professionals!
-Discover your new favorite beauty center looking at their professionals, services and portfolios. 
-Favorite looks just ‘clipping’ photos you liked, manage your schedules with beauty centers in your profile and be notified about them.</string>
+			<string>Clip is a brand new social network that connect customers with beauty centers and professionals. With Clip you can follow your favorite beauty professionals, receive their portfolio updates and share with your friends.</string>
 			<key>imageName</key>
 			<string>clip-icon</string>
 			<key>appstore</key>

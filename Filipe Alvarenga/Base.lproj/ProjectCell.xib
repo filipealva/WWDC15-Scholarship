@@ -34,7 +34,7 @@
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" placeholderIntrinsicWidth="497" placeholderIntrinsicHeight="24" text="App name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KlA-h6-oWx">
-                        <rect key="frame" x="95" y="15" width="497" height="24"/>
+                        <rect key="frame" x="95" y="15" width="490" height="24"/>
                         <constraints>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="Ih7-ZV-JZm"/>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31" id="J80-LH-LyC"/>
@@ -53,7 +53,7 @@
                         </variation>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" placeholderIntrinsicWidth="497" placeholderIntrinsicHeight="20" text="App description." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPa-xv-VOr">
-                        <rect key="frame" x="95" y="42" width="497" height="20"/>
+                        <rect key="frame" x="95" y="42" width="490" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="4EH-dd-Kcs"/>
                         </constraints>
@@ -86,12 +86,12 @@
                 <constraints>
                     <constraint firstItem="iIZ-eY-dzD" firstAttribute="top" secondItem="JSS-Eg-sL6" secondAttribute="top" constant="15" id="0Ec-GB-Fft"/>
                     <constraint firstItem="WPa-xv-VOr" firstAttribute="leading" secondItem="iIZ-eY-dzD" secondAttribute="trailing" constant="8" id="3U1-vt-xqb"/>
-                    <constraint firstAttribute="trailing" secondItem="KlA-h6-oWx" secondAttribute="trailing" constant="8" id="64H-Ca-MVe"/>
+                    <constraint firstAttribute="trailing" secondItem="KlA-h6-oWx" secondAttribute="trailing" constant="15" id="64H-Ca-MVe"/>
                     <constraint firstAttribute="trailing" secondItem="slt-cl-Guf" secondAttribute="trailing" constant="15" id="6L8-8f-AWh"/>
                     <constraint firstItem="slt-cl-Guf" firstAttribute="top" secondItem="WPa-xv-VOr" secondAttribute="bottom" constant="15" id="HWg-YK-9WK"/>
                     <constraint firstItem="WPa-xv-VOr" firstAttribute="top" secondItem="KlA-h6-oWx" secondAttribute="bottom" constant="3" id="YHz-KC-i5l"/>
                     <constraint firstItem="iIZ-eY-dzD" firstAttribute="leading" secondItem="JSS-Eg-sL6" secondAttribute="leading" constant="15" id="ba1-Ev-qaB"/>
-                    <constraint firstAttribute="trailing" secondItem="WPa-xv-VOr" secondAttribute="trailing" constant="8" id="eUi-XG-gHI"/>
+                    <constraint firstAttribute="trailing" secondItem="WPa-xv-VOr" secondAttribute="trailing" constant="15" id="eUi-XG-gHI"/>
                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iIZ-eY-dzD" secondAttribute="bottom" priority="999" constant="44" id="iPa-F6-RqP"/>
                     <constraint firstItem="KlA-h6-oWx" firstAttribute="leading" secondItem="iIZ-eY-dzD" secondAttribute="trailing" constant="8" id="jaz-a6-E1W"/>
                     <constraint firstAttribute="bottom" secondItem="slt-cl-Guf" secondAttribute="bottom" constant="19" id="oY9-C8-nJ7"/>

@@ -80,7 +80,6 @@
                     <connections>
                         <outlet property="baseScrollView" destination="ACd-yU-aX6" id="jUY-W3-94w"/>
                         <outlet property="bottomBar" destination="3Cl-Fi-irk" id="U68-9e-Bub"/>
-                        <segue destination="S8x-mY-ytB" kind="presentation" identifier="showStartViewController" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="fTm-dQ-o5V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -179,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CsL-Cm-kz6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="885" y="1370"/>
+            <point key="canvasLocation" x="818" y="1367"/>
         </scene>
         <!--About me-->
         <scene sceneID="vIL-LH-E1E">
