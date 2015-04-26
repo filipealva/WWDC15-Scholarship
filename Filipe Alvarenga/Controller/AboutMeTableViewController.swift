@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MessageUI
 
 class AboutMeTableViewController: UITableViewController {
     
@@ -53,6 +54,15 @@ class AboutMeTableViewController: UITableViewController {
     }
     
     // MARK: - Actions
+    
+    @IBAction func emailMe(sender: UIBarButtonItem) {
+        let mailComposer = MFMailComposeViewController()
+        mailComposer.mailComposeDelegate = self
+        mailComposer.setToRecipients(["ofilipealvarenga@gmail.com"])
+        mailComposer.setSubject("WWDC 15 Scolarship Contact")
+        
+        presentViewController(mailComposer, animated: true, completion: nil)
+    }
     
     func goToGitHub(sender: UIButton) {
         let project = projects[sender.tag]
@@ -164,6 +174,38 @@ extension AboutMeTableViewController: UITableViewDelegate {
     
     override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 1.0
+    }
+    
+}
+
+extension AboutMeTableViewController: MFMailComposeViewControllerDelegate {
+    
+    func mailComposeController(controller: MFMailComposeViewController!, didFinishWithResult result: MFMailComposeResult, error: NSError!) {
+        let emailFeedback = UIAlertController(title: nil, message: nil, preferredStyle: .Alert)
+    
+        if let err = error {
+            emailFeedback.title = "Oops!"
+            emailFeedback.message = "Any problem has occured, your e-mail has not been sent."
+            
+            let confirmAction = UIAlertAction(title: "No problem, I'll try again.", style: .Default, handler: nil)
+            emailFeedback.addAction(confirmAction)
+        } else {
+            switch result.value {
+            case MFMailComposeResultSent.value:
+                emailFeedback.title = "Congrats!"
+                emailFeedback.message = "Your e-mail has been sent. I'll give you a respose as soon as possible."
+            default:
+                emailFeedback.title = "Oops!"
+                emailFeedback.message = "I hope you decide to send me this e-mail soon."
+            }
+            
+            let confirmAction = UIAlertAction(title: "Ok.", style: .Default, handler: nil)
+            emailFeedback.addAction(confirmAction)
+        }
+        
+        self.dismissViewControllerAnimated(true, completion: { [unowned self] () -> Void in
+            self.presentViewController(emailFeedback, animated: true, completion: nil)
+        })
     }
     
 }

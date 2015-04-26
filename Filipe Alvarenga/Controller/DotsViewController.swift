@@ -14,6 +14,8 @@ class DotsViewController: UIViewController {
 
     @IBOutlet weak var baseScrollView: UIScrollView!
     @IBOutlet weak var bottomBar: UIView!
+    @IBOutlet weak var shimmeringView: FBShimmeringView!
+    @IBOutlet weak var aboutMeArrow: UIImageView!
     
     var needsDisplayIntro = true
     
@@ -57,16 +59,27 @@ class DotsViewController: UIViewController {
     
     var currentPage: Int = 0 {
         willSet(newValue) {
-            if newValue == 0 {
+            switch newValue {
+            case 0:
                 UIView.animateWithDuration(0.5, animations: { () -> Void in
                     self.bottomBar.alpha = 0
                     self.greetingsView.shimmeringView.alpha = 1
                 })
-            } else {
+            case 1:
                 UIView.animateWithDuration(0.5, animations: { () -> Void in
                     self.bottomBar.alpha = 0.96
                     self.greetingsView.shimmeringView.alpha = 0
                 })
+            case dotViews.count:
+                UIView.animateWithDuration(0.5, animations: { () -> Void in
+                    self.shimmeringView.alpha = 1
+                })
+            case dotViews.count - 1:
+                UIView.animateWithDuration(0.5, animations: { () -> Void in
+                    self.shimmeringView.alpha = 0
+                })
+            default:
+                break
             }
         }
     }
@@ -80,6 +93,7 @@ class DotsViewController: UIViewController {
         greetingsView.shimmeringView.addGestureRecognizer(tapToScrollDown)
         
         bottomBar.alpha = 0
+        shimmeringView.alpha = 0
         addDotsToView()
     }
     
@@ -95,7 +109,7 @@ class DotsViewController: UIViewController {
         return true
     }
     
-    // MARK: - Dots Configuration
+    // MARK: - Views Configuration
     
     func addDotsToView() {
         baseScrollView.addSubview(greetingsView)
@@ -106,6 +120,19 @@ class DotsViewController: UIViewController {
         
         baseScrollView.addSubview(line)
         baseScrollView.contentSize = CGSize(width: view.bounds.width, height: view.bounds.height * CGFloat(dotViews.count + 1))
+    }
+    
+    func setupShimmeringView() {
+        shimmeringView.contentView = aboutMeArrow
+        shimmeringView.shimmering = true
+        shimmeringView.shimmeringPauseDuration = 0.4
+        shimmeringView.shimmeringAnimationOpacity = 0.2
+        shimmeringView.shimmeringOpacity = 1.0
+        shimmeringView.shimmeringSpeed = 70
+        shimmeringView.shimmeringHighlightLength = 1.0
+        shimmeringView.shimmeringDirection = .Right
+        shimmeringView.shimmeringBeginFadeDuration = 0.1
+        shimmeringView.shimmeringEndFadeDuration = 0.3
     }
     
     // MARK: - Navigation

@@ -2,11 +2,13 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x"
+      "scale" : "1x",
+      "filename" : "Cópia 2 de launchImage.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "2x"
+      "scale" : "2x",
+      "filename" : "Cópia de launchImage.png"
     },
     {
       "idiom" : "universal",

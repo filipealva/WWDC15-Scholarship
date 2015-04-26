@@ -36,6 +36,23 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="bcH-Ef-CN0"/>
                                 </connections>
                             </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yj6-Ez-7Ka" customClass="FBShimmeringView">
+                                <rect key="frame" x="545" y="520" width="20" height="20"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Down4-100" translatesAutoresizingMaskIntoConstraints="NO" id="Xeg-bO-cJg">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Xeg-bO-cJg" secondAttribute="bottom" id="KhD-Y0-lNc"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xeg-bO-cJg" secondAttribute="trailing" id="SvE-5v-9MP"/>
+                                    <constraint firstAttribute="height" constant="20" id="VtU-Zs-OER"/>
+                                    <constraint firstItem="Xeg-bO-cJg" firstAttribute="top" secondItem="Yj6-Ez-7Ka" secondAttribute="top" id="hcA-Z9-7Gg"/>
+                                    <constraint firstItem="Xeg-bO-cJg" firstAttribute="leading" secondItem="Yj6-Ez-7Ka" secondAttribute="leading" id="v8R-tG-WzY"/>
+                                    <constraint firstAttribute="width" constant="20" id="z0e-an-ntf"/>
+                                </constraints>
+                            </view>
                             <view alpha="0.95999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Cl-Fi-irk">
                                 <rect key="frame" x="0.0" y="547" width="600" height="53"/>
                                 <subviews>
@@ -68,8 +85,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Yj6-Ez-7Ka" secondAttribute="trailing" constant="35" id="6CY-zM-idu"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3Cl-Fi-irk" secondAttribute="bottom" id="6XD-qP-lua"/>
                             <constraint firstItem="ACd-yU-aX6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YSs-RX-MKO"/>
+                            <constraint firstItem="3Cl-Fi-irk" firstAttribute="top" secondItem="Yj6-Ez-7Ka" secondAttribute="bottom" constant="7" id="aRw-p8-uq6"/>
                             <constraint firstAttribute="trailing" secondItem="ACd-yU-aX6" secondAttribute="trailing" id="bZK-DG-WCh"/>
                             <constraint firstAttribute="trailing" secondItem="3Cl-Fi-irk" secondAttribute="trailing" id="kg7-eo-mIQ"/>
                             <constraint firstItem="ACd-yU-aX6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="o1w-tb-gS0"/>
@@ -78,8 +97,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="aboutMeArrow" destination="Xeg-bO-cJg" id="geA-Jh-EEd"/>
                         <outlet property="baseScrollView" destination="ACd-yU-aX6" id="jUY-W3-94w"/>
                         <outlet property="bottomBar" destination="3Cl-Fi-irk" id="U68-9e-Bub"/>
+                        <outlet property="shimmeringView" destination="Yj6-Ez-7Ka" id="6hJ-hG-cF3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -299,7 +320,11 @@
                                 <action selector="closeAboutMe:" destination="J4n-Q0-4t8" id="ZOU-E6-77O"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="mail" style="done" id="2CW-ed-hED"/>
+                        <barButtonItem key="rightBarButtonItem" image="mail" style="done" id="2CW-ed-hED">
+                            <connections>
+                                <action selector="emailMe:" destination="J4n-Q0-4t8" id="bEU-S4-vaM"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jlg-Q5-MlY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -326,6 +351,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Down4-100" width="33" height="33"/>
         <image name="aboutme" width="28" height="28"/>
         <image name="info" width="28" height="28"/>
         <image name="location" width="19" height="28"/>
