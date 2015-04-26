@@ -31,7 +31,7 @@ class DotsViewController: UIViewController {
         let firstDot = firstDotView.dot
         firstDot.layoutIfNeeded()
 
-        let line = UIView(frame: CGRect(x: firstDotView.dot.center.x - 1.5, y: firstDot.center.y * 3, width: 3.0, height: 0.0))
+        let line = UIView(frame: CGRect(x: firstDotView.dot.center.x - 1.5, y: self.view.bounds.height * 1.5, width: 3.0, height: 0.0))
         line.backgroundColor = UIColor.blackColor()
         line.layer.cornerRadius = 2.0
         
@@ -94,6 +94,8 @@ class DotsViewController: UIViewController {
         
         bottomBar.alpha = 0
         shimmeringView.alpha = 0
+        
+        setupShimmeringView()
         addDotsToView()
     }
     
@@ -126,9 +128,9 @@ class DotsViewController: UIViewController {
         shimmeringView.contentView = aboutMeArrow
         shimmeringView.shimmering = true
         shimmeringView.shimmeringPauseDuration = 0.4
-        shimmeringView.shimmeringAnimationOpacity = 0.2
+        shimmeringView.shimmeringAnimationOpacity = 0.1
         shimmeringView.shimmeringOpacity = 1.0
-        shimmeringView.shimmeringSpeed = 70
+        shimmeringView.shimmeringSpeed = 20
         shimmeringView.shimmeringHighlightLength = 1.0
         shimmeringView.shimmeringDirection = .Right
         shimmeringView.shimmeringBeginFadeDuration = 0.1
