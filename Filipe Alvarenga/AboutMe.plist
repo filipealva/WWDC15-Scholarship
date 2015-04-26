@@ -8,7 +8,7 @@
 			<key>title</key>
 			<string>BEPiD - Brazilian Education Program for iOS Development</string>
 			<key>description</key>
-			<string>This program was a game-changing in my education, it was crucial for me to discover what I love and what I want to do. A learnt a lot about iOS Development, about all the phases related to product development and the most important thing: I learnt a new way to learn, it turn me into a passionate learner.</string>
+			<string>This program was game-changing in my education, it was crucial for me to discover what I love and what I want to do. I learned a lot about iOS Development, about all the phases related to product development and the most important thing: I learned a new way to learn, it turned me into a passionate learner.</string>
 			<key>startDate</key>
 			<string>Started at: November 2013</string>
 			<key>endDate</key>
@@ -20,7 +20,7 @@
 			<key>title</key>
 			<string>Systems Analisys and Development Degree</string>
 			<key>description</key>
-			<string>I&apos;m undergradute in Systems Analisys and Development.</string>
+			<string>I&apos;m an undergradute in Systems Analisys and Development.</string>
 			<key>startDate</key>
 			<string>Started at: July 2012</string>
 			<key>endDate</key>
@@ -69,7 +69,7 @@
 			<key>name</key>
 			<string>Clip - Find the Better Beauty Service</string>
 			<key>description</key>
-			<string>Clip is a brand new social network that connect customers with beauty centers and professionals. With Clip you can follow your favorite beauty professionals, receive their portfolio updates and share with your friends.</string>
+			<string>Clip is a brand new social network that connects customers with beauty centers and professionals. With Clip you can follow your favorite beauty professionals, receive their portfolio updates and share with your friends.</string>
 			<key>imageName</key>
 			<string>clip-icon</string>
 			<key>appstore</key>
@@ -82,13 +82,13 @@
 			<key>title</key>
 			<string>Introduction</string>
 			<key>description</key>
-			<string>Scrolling down you&apos;ll connect the dots that brought me up here. </string>
+			<string>Scroll down to connect the dots that brought me up here. </string>
 		</dict>
 		<dict>
 			<key>title</key>
 			<string>Left the Wrong Job</string>
 			<key>description</key>
-			<string>I left the job that was my dream job in the past. I was looking for new experiences, looking for a job where I could really make the difference.</string>
+			<string>I left the job I thought was my dream job. I needed new experiences, I needed to find a job where I could make a difference.</string>
 			<key>date</key>
 			<string>October 2013</string>
 		</dict>
@@ -96,7 +96,7 @@
 			<key>title</key>
 			<string>BEPiD</string>
 			<key>description</key>
-			<string>After quitting my job, I heard about BEPiD(Brazilian Education Program for iOS Development), an educational program to train iOS developers. It was very exciting to me, and despite knowing little about the platform I decided to sign up. I was accepted and early on I realized that would not be the same at the end of this program.</string>
+			<string>After quitting my job, I heard about BEPiD(Brazilian Education Program for iOS Development), an educational program to train iOS developers. It was very exciting to me, and despite knowing little about the platform I decided to sign up. I was accepted and early on I realized that I would not be the same at the end of this program.</string>
 			<key>date</key>
 			<string>November 2014</string>
 		</dict>
@@ -104,7 +104,7 @@
 			<key>title</key>
 			<string>First App</string>
 			<key>description</key>
-			<string>After six months participating in BEPiD I released my first app, which I called LimPOA. The LimPOA is a guide that helps residents of the city of Porto Alegre to properly dispose of their waste and it uses open data provided by the Government.</string>
+			<string>After six months participating in BEPiD I released my first app, which I called LimPOA. The LimPOA is a guide that helps residents of the city of Porto Alegre to properly dispose of their waste. The app uses open data provided by the Government.</string>
 			<key>date</key>
 			<string>July 2014</string>
 		</dict>
@@ -112,7 +112,7 @@
 			<key>title</key>
 			<string>First Swift App</string>
 			<key>description</key>
-			<string>I was very excited with the announcement of Swift language, so I decided to build an app to explore this new amazing language, I did it and I’ve made it open-source at GitHub to share with the people the way that I used Swift to built my app. I’ve shared it with the intent to help someone to learn and receive suggestions of improvements.</string>
+			<string>I was very excited with the announcement of Swift language, so I decided to build an app to explore this new amazing language, I’ve made it open-source at GitHub to share with the people the way that I used Swift to build my app. I&apos;ve shared it with the intent to help others learn and improve. </string>
 			<key>date</key>
 			<string>November 2014</string>
 		</dict>
@@ -120,7 +120,7 @@
 			<key>title</key>
 			<string>First Swift Job</string>
 			<key>description</key>
-			<string>Thanks to the code of my first Swift app that I&apos;ve opened, I got an &quot;full-Swift&quot; job! It&apos;s being amazing work just with Swift and I&apos;m learning a lot about it.</string>
+			<string>Thanks to the code of my first Swift app that I built, I got a &quot;full-Swift&quot; job! It&apos;s being amazing work entirely with Swift and I&apos;m learning a lot about it.</string>
 			<key>date</key>
 			<string>January 2015</string>
 		</dict>
@@ -128,7 +128,7 @@
 			<key>title</key>
 			<string>WWDC 15</string>
 			<key>description</key>
-			<string>Wow! Thank you for connect this dot and give to me a ticket to WWDC 15! Haha just a joke, but I really want this to became reality. Certainly go to WWDC will bring me a lot of amazing dots that I&apos;ll connect in my future.</string>
+			<string>Thank you for connecting this dot and giving me a ticket to WWDC 15! Haha, just a joke, but I really do want this dream to become a reality! Being a part of WWDC 15 would bring me a lot of amazing dots that I&apos;ll connect in my future.</string>
 			<key>date</key>
 			<string>June 2015</string>
 		</dict>
