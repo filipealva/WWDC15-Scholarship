@@ -12,6 +12,7 @@ class GreetingsView: UIView {
 
     @IBOutlet weak var shimmeringView: FBShimmeringView!
     @IBOutlet weak var scrollDownArrow: UIImageView!
+    @IBOutlet weak var greetingsContent: UIView!
     @IBOutlet weak var greetingsMessageContainer: UIView!
     @IBOutlet weak var greetingsContentHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var greetingsMessageContainerHeightConstraint: NSLayoutConstraint!
@@ -26,7 +27,8 @@ class GreetingsView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        frame = CGRect(origin: frame.origin, size: CGSize(width: superview!.frame.size.width, height: superview!.frame.size.height))
+        frame = CGRect(x: frame.origin.x, y: frame.origin.y, width: superview!.bounds.width, height: superview!.bounds.height)
+        
         adjustConstraintsToFit()
     }
     
@@ -52,7 +54,6 @@ class GreetingsView: UIView {
         
         let containerHeight = greetingsMessage.frame.origin.y + greetingsMessage.frame.size.height + 8.0
         greetingsMessageContainerHeightConstraint.constant = containerHeight
-        greetingsContentHeightConstraint.constant = containerHeight
     }
 
 }

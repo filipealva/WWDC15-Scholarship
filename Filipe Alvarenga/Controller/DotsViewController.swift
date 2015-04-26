@@ -19,7 +19,7 @@ class DotsViewController: UIViewController {
     
     lazy var greetingsView: GreetingsView = {
        let greetingsView =  NSBundle.mainBundle().loadNibNamed("GreetingsView", owner: self, options: nil)[0] as! GreetingsView
-       greetingsView.frame = CGRect(origin: CGPoint(x: 0.0, y: 0.0), size: self.view.frame.size)
+       greetingsView.frame = CGRect(origin: CGPoint(x: 0.0, y: 0.0), size: greetingsView.frame.size)
        
        return greetingsView
     }()
@@ -80,13 +80,7 @@ class DotsViewController: UIViewController {
         greetingsView.shimmeringView.addGestureRecognizer(tapToScrollDown)
         
         bottomBar.alpha = 0
-
         addDotsToView()
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        
     }
     
     override func viewDidAppear(animated: Bool) {

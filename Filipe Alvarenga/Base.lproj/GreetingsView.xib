@@ -21,8 +21,8 @@
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me" translatesAutoresizingMaskIntoConstraints="NO" id="y4T-cl-PIV">
                             <rect key="frame" x="15" y="0.0" width="50" height="50"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="50" id="8YY-YS-gbI"/>
-                                <constraint firstAttribute="height" constant="50" id="O7Y-2Q-WJF"/>
+                                <constraint firstAttribute="height" constant="50" id="0uR-J3-jCA"/>
+                                <constraint firstAttribute="width" constant="50" id="8uF-f1-KWk"/>
                             </constraints>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -39,7 +39,7 @@
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, I'm Filipe Alvarenga and I trust that the dots will somehow connect in my future. Will be a pleasure to meet you!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JYM-m3-4XW">
                                     <rect key="frame" x="22" y="8" width="484" height="41"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="QKU-bg-Fhv"/>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="bho-rP-PWe"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -48,32 +48,26 @@
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstItem="JYM-m3-4XW" firstAttribute="leading" secondItem="WJb-Lx-wSR" secondAttribute="leading" constant="22" id="5w8-Rb-Qh2"/>
-                                <constraint firstAttribute="bottom" secondItem="29G-V9-zBh" secondAttribute="bottom" id="E1K-ud-Pd2"/>
-                                <constraint firstAttribute="trailing" secondItem="JYM-m3-4XW" secondAttribute="trailing" constant="13" id="JHK-rh-Q3B"/>
-                                <constraint firstAttribute="trailing" secondItem="29G-V9-zBh" secondAttribute="trailing" id="Jfs-Bk-8vN"/>
-                                <constraint firstItem="JYM-m3-4XW" firstAttribute="top" secondItem="WJb-Lx-wSR" secondAttribute="top" constant="8" id="JxM-LL-aeK"/>
-                                <constraint firstItem="29G-V9-zBh" firstAttribute="leading" secondItem="WJb-Lx-wSR" secondAttribute="leading" id="TA2-4l-K2A"/>
-                                <constraint firstItem="29G-V9-zBh" firstAttribute="top" secondItem="WJb-Lx-wSR" secondAttribute="top" id="joh-wx-FLE"/>
-                                <constraint firstAttribute="height" constant="115" id="zKN-H5-QxN"/>
+                                <constraint firstAttribute="trailing" secondItem="JYM-m3-4XW" secondAttribute="trailing" constant="13" id="13p-jv-eF9"/>
+                                <constraint firstItem="29G-V9-zBh" firstAttribute="leading" secondItem="WJb-Lx-wSR" secondAttribute="leading" id="Gap-Rw-TVL"/>
+                                <constraint firstAttribute="bottom" secondItem="29G-V9-zBh" secondAttribute="bottom" id="LJc-v7-Tpr"/>
+                                <constraint firstItem="JYM-m3-4XW" firstAttribute="leading" secondItem="WJb-Lx-wSR" secondAttribute="leading" constant="22" id="MyG-dx-Wgz"/>
+                                <constraint firstItem="JYM-m3-4XW" firstAttribute="top" secondItem="WJb-Lx-wSR" secondAttribute="top" constant="8" id="aW5-oI-2jW"/>
+                                <constraint firstItem="29G-V9-zBh" firstAttribute="top" secondItem="WJb-Lx-wSR" secondAttribute="top" id="ipY-cf-wHx"/>
+                                <constraint firstAttribute="trailing" secondItem="29G-V9-zBh" secondAttribute="trailing" id="wWk-lU-Wlx"/>
                             </constraints>
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="y4T-cl-PIV" firstAttribute="top" secondItem="9qf-cw-FGm" secondAttribute="top" id="1G8-xf-ieA"/>
                         <constraint firstAttribute="height" constant="115" id="CR4-QQ-SJw"/>
-                        <constraint firstItem="y4T-cl-PIV" firstAttribute="leading" secondItem="9qf-cw-FGm" secondAttribute="leading" constant="15" id="F7S-gs-cUe"/>
-                        <constraint firstItem="WJb-Lx-wSR" firstAttribute="leading" secondItem="y4T-cl-PIV" secondAttribute="trailing" constant="1" id="WSA-2B-KRo"/>
-                        <constraint firstItem="WJb-Lx-wSR" firstAttribute="top" secondItem="9qf-cw-FGm" secondAttribute="top" id="YcW-7B-83u"/>
-                        <constraint firstAttribute="trailing" secondItem="WJb-Lx-wSR" secondAttribute="trailing" constant="15" id="agy-vg-hD1"/>
-                        <constraint firstAttribute="bottom" secondItem="WJb-Lx-wSR" secondAttribute="bottom" id="ikZ-GU-Upd"/>
+                        <constraint firstAttribute="trailing" secondItem="WJb-Lx-wSR" secondAttribute="trailing" constant="15" id="HC5-R3-w2c"/>
+                        <constraint firstItem="WJb-Lx-wSR" firstAttribute="leading" secondItem="y4T-cl-PIV" secondAttribute="trailing" constant="1" id="JaH-rz-fxF"/>
+                        <constraint firstItem="WJb-Lx-wSR" firstAttribute="top" secondItem="9qf-cw-FGm" secondAttribute="top" id="Org-gc-W4j"/>
+                        <constraint firstItem="y4T-cl-PIV" firstAttribute="top" secondItem="9qf-cw-FGm" secondAttribute="top" id="dEE-Ze-25R"/>
+                        <constraint firstItem="WJb-Lx-wSR" firstAttribute="height" secondItem="9qf-cw-FGm" secondAttribute="height" id="vAX-tg-nr4"/>
+                        <constraint firstItem="y4T-cl-PIV" firstAttribute="leading" secondItem="9qf-cw-FGm" secondAttribute="leading" constant="15" id="xzp-4V-hg9"/>
                     </constraints>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="ikZ-GU-Upd"/>
-                        </mask>
-                    </variation>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CYg-cz-GvU" customClass="FBShimmeringView">
                     <rect key="frame" x="278" y="506" width="44" height="44"/>
@@ -106,10 +100,11 @@
                 <constraint firstAttribute="centerY" secondItem="9qf-cw-FGm" secondAttribute="centerY" id="wPi-ia-n7Q"/>
             </constraints>
             <connections>
+                <outlet property="greetingsContent" destination="9qf-cw-FGm" id="jnO-Ae-fYC"/>
                 <outlet property="greetingsContentHeightConstraint" destination="CR4-QQ-SJw" id="MqW-DX-InA"/>
                 <outlet property="greetingsMessage" destination="JYM-m3-4XW" id="Hok-yU-W8f"/>
                 <outlet property="greetingsMessageContainer" destination="WJb-Lx-wSR" id="URq-RB-1K1"/>
-                <outlet property="greetingsMessageContainerHeightConstraint" destination="zKN-H5-QxN" id="dRE-H9-Cz5"/>
+                <outlet property="greetingsMessageContainerHeightConstraint" destination="CR4-QQ-SJw" id="yTf-P6-Ybf"/>
                 <outlet property="scrollDownArrow" destination="PQ4-5g-WIg" id="YQA-Hl-XtR"/>
                 <outlet property="shimmeringView" destination="CYg-cz-GvU" id="kfR-zk-mLS"/>
             </connections>

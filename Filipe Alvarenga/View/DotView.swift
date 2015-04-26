@@ -43,8 +43,7 @@ class DotView: UIView {
         
         frame = CGRect(x: frame.origin.x, y: frame.origin.y, width: superview!.bounds.width, height: superview!.bounds.height)
         
-        storyDescription.layoutIfNeeded()
-        storyContainerHeightConstraint.constant = storyDescription.frame.origin.y + storyDescription.frame.size.height + 8.0
+        adjustConstraintsToFit()
     }
     
     // MARK: - Data Binding
@@ -53,6 +52,13 @@ class DotView: UIView {
         self.storyTitle.text = self.story.title
         self.storyDescription.text = self.story.description
         self.storyDate.text = self.story.date
+    }
+    
+    // MARK: - Resizing Helpers
+    
+    func adjustConstraintsToFit() {
+        storyDescription.layoutIfNeeded()
+        storyContainerHeightConstraint.constant = storyDescription.frame.origin.y + storyDescription.frame.size.height + 8.0
     }
     
 }
