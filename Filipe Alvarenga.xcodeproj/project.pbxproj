@@ -27,6 +27,19 @@
 		03C21F851AE49DC80033F89A /* AboutMe.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03C21F841AE49DC80033F89A /* AboutMe.plist */; };
 		03C73E361AEDB6AC00254D8E /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C73E331AEDB6AC00254D8E /* FBShimmeringLayer.m */; };
 		03C73E371AEDB6AC00254D8E /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C73E351AEDB6AC00254D8E /* FBShimmeringView.m */; };
+		03C73E481AEDF41900254D8E /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03C73E391AEDB6CD00254D8E /* OpenSans-Bold.ttf */; };
+		03C73E491AEDF41900254D8E /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03C73E3A1AEDB6CD00254D8E /* OpenSans-BoldItalic.ttf */; };
+		03C73E4A1AEDF41900254D8E /* OpenSans-CondBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03C73E3B1AEDB6CD00254D8E /* OpenSans-CondBold.ttf */; };
+		03C73E4B1AEDF41900254D8E /* OpenSans-CondLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03C73E3C1AEDB6CD00254D8E /* OpenSans-CondLight.ttf */; };
+		03C73E4C1AEDF41900254D8E /* OpenSans-CondLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03C73E3D1AEDB6CD00254D8E /* OpenSans-CondLightItalic.ttf */; };
+		03C73E4D1AEDF41900254D8E /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03C73E3E1AEDB6CD00254D8E /* OpenSans-ExtraBold.ttf */; };
+		03C73E4E1AEDF41900254D8E /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03C73E3F1AEDB6CD00254D8E /* OpenSans-ExtraBoldItalic.ttf */; };
+		03C73E4F1AEDF41900254D8E /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03C73E401AEDB6CD00254D8E /* OpenSans-Italic.ttf */; };
+		03C73E501AEDF41900254D8E /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03C73E411AEDB6CD00254D8E /* OpenSans-Light.ttf */; };
+		03C73E511AEDF41900254D8E /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03C73E421AEDB6CD00254D8E /* OpenSans-LightItalic.ttf */; };
+		03C73E521AEDF41900254D8E /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03C73E431AEDB6CD00254D8E /* OpenSans-Regular.ttf */; };
+		03C73E531AEDF41900254D8E /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03C73E441AEDB6CD00254D8E /* OpenSans-Semibold.ttf */; };
+		03C73E541AEDF41900254D8E /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03C73E451AEDB6CD00254D8E /* OpenSans-SemiboldItalic.ttf */; };
 		03D800501AEC78040008CAB3 /* ProjectWithGitHubCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D8004E1AEC78040008CAB3 /* ProjectWithGitHubCell.xib */; };
 		03D800521AEC79DD0008CAB3 /* ProjectWithGitHubTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D800511AEC79DD0008CAB3 /* ProjectWithGitHubTableViewCell.swift */; };
 		03D99B611AE93F7600E4CC77 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D99B5F1AE93F7600E4CC77 /* LaunchScreen.xib */; };
@@ -352,6 +365,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03C73E481AEDF41900254D8E /* OpenSans-Bold.ttf in Resources */,
+				03C73E491AEDF41900254D8E /* OpenSans-BoldItalic.ttf in Resources */,
+				03C73E4A1AEDF41900254D8E /* OpenSans-CondBold.ttf in Resources */,
+				03C73E4B1AEDF41900254D8E /* OpenSans-CondLight.ttf in Resources */,
+				03C73E4C1AEDF41900254D8E /* OpenSans-CondLightItalic.ttf in Resources */,
+				03C73E4D1AEDF41900254D8E /* OpenSans-ExtraBold.ttf in Resources */,
+				03C73E4E1AEDF41900254D8E /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				03C73E4F1AEDF41900254D8E /* OpenSans-Italic.ttf in Resources */,
+				03C73E501AEDF41900254D8E /* OpenSans-Light.ttf in Resources */,
+				03C73E511AEDF41900254D8E /* OpenSans-LightItalic.ttf in Resources */,
+				03C73E521AEDF41900254D8E /* OpenSans-Regular.ttf in Resources */,
+				03C73E531AEDF41900254D8E /* OpenSans-Semibold.ttf in Resources */,
+				03C73E541AEDF41900254D8E /* OpenSans-SemiboldItalic.ttf in Resources */,
 				0342798C1AEB732F00F7EF21 /* ProjectCell.xib in Resources */,
 				0342799B1AEC4FD300F7EF21 /* AboutMeSectionHeader.xib in Resources */,
 				03D99B741AE98B0100E4CC77 /* GreetingsView.xib in Resources */,
