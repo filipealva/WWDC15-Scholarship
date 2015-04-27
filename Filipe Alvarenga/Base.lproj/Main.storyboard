@@ -43,7 +43,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Xeg-bO-cJg" secondAttribute="bottom" id="KhD-Y0-lNc"/>
                                     <constraint firstAttribute="trailing" secondItem="Xeg-bO-cJg" secondAttribute="trailing" id="SvE-5v-9MP"/>
@@ -199,7 +199,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CsL-Cm-kz6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="818" y="1367"/>
+            <point key="canvasLocation" x="883" y="1365"/>
         </scene>
         <!--About me-->
         <scene sceneID="vIL-LH-E1E">
@@ -329,7 +329,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jlg-Q5-MlY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2311" y="546"/>
+            <point key="canvasLocation" x="2281" y="632"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ieb-d1-zK4">
@@ -347,7 +347,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jr1-jh-ABm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1587" y="546"/>
+            <point key="canvasLocation" x="1581" y="632"/>
         </scene>
     </scenes>
     <resources>
