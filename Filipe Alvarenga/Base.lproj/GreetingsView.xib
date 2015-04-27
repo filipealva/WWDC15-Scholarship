@@ -41,7 +41,7 @@
                                     <constraints>
                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="bho-rP-PWe"/>
                                     </constraints>
-                                    <string key="text">Hi, I'm Filipe Alvarenga and I trust that the dots will somehow connect in my future. Will be a pleasure to meet you at WWDC 15.</string>
+                                    <string key="text">Hi, I'm Filipe Alvarenga and I trust that the dots will somehow connect in my future. It will a pleasure to meet you at WWDC 15.</string>
                                     <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
