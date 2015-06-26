@@ -1,4 +1,4 @@
-# WWDC15 Scholarship [ACCEPTED BY APPLE]
+# WWDC15 Scholarship [WINNER]
 
 My submission to WWDC15 Scholarship. 
 
