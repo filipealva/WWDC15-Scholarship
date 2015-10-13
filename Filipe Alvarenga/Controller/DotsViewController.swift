@@ -39,7 +39,7 @@ class DotsViewController: UIViewController {
     }()
     
     lazy var dotViews: [DotView] = {
-        map(enumerate(self.stories)) { [unowned self] (index, story) in
+        self.stories.enumerate().map() { (index, story) in
             let dotView = NSBundle.mainBundle().loadNibNamed("DotView", owner: self, options: nil)[0] as! DotView
             let dotViewFrame = CGRect(x: 0.0, y: self.view.bounds.height * CGFloat(index + 1), width: dotView.bounds.width, height: dotView.bounds.height)
             dotView.frame = dotViewFrame
@@ -54,7 +54,7 @@ class DotsViewController: UIViewController {
         let aboutMe = NSDictionary(contentsOfFile: pathToAboutMe) as! [String: AnyObject]
         let stories = aboutMe["stories"] as! [[String: AnyObject]]
         
-        return map(stories, {Story(dict: $0)})
+        return stories.map({Story(dict: $0)})
     }()
     
     var currentPage: Int = 0 {

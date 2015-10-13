@@ -11,11 +11,11 @@ import Foundation
 /**
     Education Item model class.
 
-    :param: title The education item title.
-    :param: description The education item description.
-    :param: startDate The date that this education item was started.
-    :param: endDate The date that this education item was ended (or it's preview).
-    :param: image The image of this education item.
+    - parameter title: The education item title.
+    - parameter description: The education item description.
+    - parameter startDate: The date that this education item was started.
+    - parameter endDate: The date that this education item was ended (or it's preview).
+    - parameter image: The image of this education item.
 */
 
 

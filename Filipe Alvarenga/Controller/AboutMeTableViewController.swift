@@ -18,7 +18,7 @@ class AboutMeTableViewController: UITableViewController {
         let aboutMe = NSDictionary(contentsOfFile: pathToAboutMe) as! [String: AnyObject]
         let projects = aboutMe["projects"] as! [[String: AnyObject]]
         
-        return map(projects, {Project(dict: $0)})
+        return projects.map({Project(dict: $0)})
     }()
     
     lazy var educationItems: [EducationItem] = {
@@ -26,7 +26,7 @@ class AboutMeTableViewController: UITableViewController {
         let aboutMe = NSDictionary(contentsOfFile: pathToAboutMe) as! [String: AnyObject]
         let educationItems = aboutMe["educationItems"] as! [[String: AnyObject]]
         
-        return map(educationItems, {EducationItem(dict: $0)})
+        return educationItems.map({EducationItem(dict: $0)})
     }()
     
     let projectCellIdentifier = "projectCell"
@@ -103,7 +103,7 @@ class AboutMeTableViewController: UITableViewController {
     
 }
 
-extension AboutMeTableViewController: UITableViewDataSource {
+extension AboutMeTableViewController {
 
     // MARK: - UITableViewDataSource
     
@@ -123,7 +123,7 @@ extension AboutMeTableViewController: UITableViewDataSource {
         if indexPath.section == 0 {
             let project = projects[indexPath.row]
             
-            if let gitHub = project.gitHub {
+            if let _ = project.gitHub {
                 let projectWithGitHubCell = tableView.dequeueReusableCellWithIdentifier(projectWithGitHubCellIdentifier, forIndexPath: indexPath) as! ProjectWithGitHubTableViewCell
                 projectWithGitHubCell.project = project
                 projectWithGitHubCell.gitHubButton.tag = indexPath.row
@@ -150,7 +150,7 @@ extension AboutMeTableViewController: UITableViewDataSource {
     
 }
 
-extension AboutMeTableViewController: UITableViewDelegate {
+extension AboutMeTableViewController {
 
     // MARK: - UITableViewDelegate
     
@@ -192,18 +192,18 @@ extension AboutMeTableViewController: MFMailComposeViewControllerDelegate {
 
     // MARK: - MFMailComposeViewControllerDelegate
     
-    func mailComposeController(controller: MFMailComposeViewController!, didFinishWithResult result: MFMailComposeResult, error: NSError!) {
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
         let emailFeedback = UIAlertController(title: nil, message: nil, preferredStyle: .Alert)
     
-        if let err = error {
+        if let _ = error {
             emailFeedback.title = "Oops!"
             emailFeedback.message = "Any problem has occured, your e-mail has not been sent."
             
             let confirmAction = UIAlertAction(title: "No problem, I'll try again.", style: .Default, handler: nil)
             emailFeedback.addAction(confirmAction)
         } else {
-            switch result.value {
-            case MFMailComposeResultSent.value:
+            switch result.rawValue {
+            case MFMailComposeResultSent.rawValue:
                 emailFeedback.title = "Congrats!"
                 emailFeedback.message = "Your e-mail has been sent. I'll give you a respose as soon as possible."
             default:

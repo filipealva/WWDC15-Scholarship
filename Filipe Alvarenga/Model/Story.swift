@@ -11,8 +11,8 @@ import Foundation
 /**
     Story model class. 
     
-    :param: title The story title.
-    :param: description The story description.
+    - parameter title: The story title.
+    - parameter description: The story description.
 */
 
 class Story {
